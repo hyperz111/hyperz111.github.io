@@ -1,0 +1,85 @@
+@import 'modern-normalize';
+
+:root {
+	--bg-color: #fafafa;
+	--text-color: #222;
+	--img-border-color: #232323;
+	--link-hover-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #1d1d1d;
+		--text-color: #fafafa;
+		--img-border-color: #e3e3e3;
+		--link-hover-color: #ddd;
+	}
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100dvw;
+	height: 100dvh;
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+#PROFILE_IMAGE {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#PROFILE_IMAGE img {
+	width: 17.5rem;
+	border-radius: 100%;
+	border: 5px solid var(--img-border-color);
+}
+
+#PROFILE_INFO {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#PROFILE_INFO * {
+	text-align: center;
+}
+
+#PROFILE_LOCATION,
+#PROFILE_FOLLOW {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.follow-dots {
+	margin-inline: 0.5rem;
+}
+
+#PROFILE_NAME {
+	font-size: 3rem;
+}
+
+#PROFILE_NAME a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#PROFILE_NAME:hover a {
+	color: var(--link-hover-color);
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	main {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
