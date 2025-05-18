@@ -1,12 +1,14 @@
 {
   "short_name": "Hyper-Z11",
-  "name": "Hyper-Z11 Official Website",
+  "name": "Hyper-Z11 Official",
+  "description": "Hyper-Z11 Official Website",
   "icons": [{
-    "src": "icon.png",
+    "src": "/icon.png",
     "type": "image/png",
-    "sizes": "192x192"
+    "sizes": "460×460"
   }],
   "start_url": "/",
+  "display": "browser",
   "background_color": "#fafafa",
   "theme_color": "#fafafa"
 }

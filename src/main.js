@@ -20,9 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			let PROFILE_IMAGE = document.getElementById('PROFILE_IMAGE');
 			let PROFILE_NAME = document.getElementById('PROFILE_NAME');
 			let PROFILE_BIO = document.getElementById('PROFILE_BIO');
-			let PROFILE_LOCATION_TEXT = document.getElementById(
-				'PROFILE_LOCATION_TEXT',
-			);
+			let PROFILE_LOCATION_TEXT = document.getElementById('PROFILE_LOCATION_TEXT');
 			let PROFILE_FOLLOWERS = document.getElementById('PROFILE_FOLLOWERS');
 			let PROFILE_FOLLOWING = document.getElementById('PROFILE_FOLLOWING');
 
@@ -33,10 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			PROFILE_BIO.innerHTML = data.bio;
 			PROFILE_LOCATION_TEXT.innerHTML = data.location;
-			PROFILE_FOLLOWERS.innerHTML =
-				data.followers > 0
-					? `${data.followers} followers`
-					: `${data.followers} follower`;
+			PROFILE_FOLLOWERS.innerHTML = data.followers > 0 ? `${data.followers} followers` : `${data.followers} follower`;
 			PROFILE_FOLLOWING.innerHTML = `${data.following} following`;
 
 			let img = document.createElement('img');
