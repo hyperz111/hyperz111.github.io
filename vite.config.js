@@ -1,6 +1,14 @@
 /** @type {import('vite').UserConfig} */
 import { defineConfig } from 'vite';
+import prismjs from 'vite-plugin-prismjs'
 
 export default defineConfig({
-  // Define your config in here
+  plugins: [
+    prismjs({
+      languages: ['javascript'],
+      plugins: ['normalize-whitespace'],
+      theme: 'tomorrow',
+      css: true
+    }),
+  ],
 });

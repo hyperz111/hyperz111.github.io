@@ -11,9 +11,11 @@
   },
   "devDependencies": {
     "prettier": "^3.5.3",
-    "vite": "^6.3.1"
+    "vite": "^6.3.1",
+    "vite-plugin-prismjs": "^0.0.11"
   },
   "dependencies": {
-    "modern-normalize": "^3.0.1"
+    "modern-normalize": "^3.0.1",
+    "prismjs": "^1.30.0"
   }
 }

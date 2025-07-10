@@ -1,4 +1,5 @@
 import './style.css';
+import Prism from 'prismjs';
 
 document.addEventListener('DOMContentLoaded', () => {
 	fetch('https://api.github.com/users/hyperz111')
@@ -40,10 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			PROFILE_IMAGE.append(img);
 		})
 		.catch((error) => {
-			document.querySelector('main').innerHTML = `
-			<h1>Cannot Fetch Data</h1>
-			`;
+			document.querySelector('main').innerHTML = `<h1>Cannot Fetch Data</h1>`;
 		});
-
-	//document.querySelectorAll("body *").forEach(e => e.style.border = "1px solid red")
+	Prism.highlightAll();
 });
