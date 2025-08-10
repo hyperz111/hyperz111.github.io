@@ -7,9 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "prettier -w src/ ./index.html"
+    "format": "prettier -w **/*.{js,html,css} !dist"
   },
   "devDependencies": {
+    "@hyperz111/prettier-config": "^0.1.1",
     "prettier": "^3.5.3",
     "vite": "^6.3.1",
     "vite-plugin-prismjs": "^0.0.11"
