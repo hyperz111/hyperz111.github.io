@@ -1,0 +1,117 @@
+@forward "modern-normalize";
+
+body {
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #007ed3;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.items-center {
+	display: flex;
+	align-items: center;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav {
+	& * {
+		@extend .items-center;
+	}
+
+	& > ul {
+		gap: 1rem;
+
+		& > li > a {
+			gap: 0.25rem;
+		}
+	}
+}
+
+#homepage-memes > img {
+	width: 15rem;
+}
+
+#about {
+	& > img {
+		border: 3px solid #222;
+		width: 50%;
+		max-width: 100%;
+		float: left;
+		margin-right: 1rem;
+
+		@media (min-width: 768px) {
+			& {
+				width: 25%;
+			}
+		}
+	}
+}
+
+#profile {
+	& ul > li > a {
+		@extend .items-center;
+		gap: 0.5rem;
+	}
+}
+
+#projects {
+	& > .waiting {
+		@extend .items-center;
+		gap: 0.25rem;
+	}
+
+	& > .error {
+		& > pre {
+			white-space: pre;
+			overflow-x: auto;
+			background: #555;
+			color: #eee;
+			padding: 1rem;
+		}
+	}
+
+	& > .repos {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 0.5rem;
+
+		& > .repo {
+			border: 1px solid #222;
+			padding: 1rem;
+
+			& > .repo-info {
+				@extend .items-center;
+				gap: 1rem;
+
+				& > * {
+					@extend .items-center;
+					gap: 0.5rem;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		& > .repos {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}

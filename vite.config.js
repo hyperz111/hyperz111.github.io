@@ -1,14 +1,6 @@
-/** @type {import('vite').UserConfig} */
+import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
-import prismjs from "vite-plugin-prismjs";
 
 export default defineConfig({
-	plugins: [
-		prismjs({
-			languages: ["javascript"],
-			plugins: ["normalize-whitespace"],
-			theme: "tomorrow",
-			css: true,
-		}),
-	],
+	plugins: [sveltekit()],
 });
