@@ -1,6 +1,5 @@
 <script>
-
-import { formatDate } from "$lib/utils.js";
+	import { formatDate } from "$lib/utils.js";
 	let { data } = $props();
 </script>
 
@@ -10,7 +9,7 @@ import { formatDate } from "$lib/utils.js";
 
 <div>
 	<h1>{data.frontmatter.title}</h1>
-	<p>{formatDate(data.frontmatter.date)} - 10 minutes read</p>
+	<p>{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime} ({data.frontmatter.wordCount})</p>
 </div>
 
 <data.component />

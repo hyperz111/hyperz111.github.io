@@ -1,6 +1,7 @@
 import adapter from "@sveltejs/adapter-auto";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { mdsvex } from "mdsvex";
+import remarkReadingTime from "./scripts/remark-reading-time.js";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,6 +10,7 @@ const config = {
 		vitePreprocess(),
 		mdsvex({
 			extensions: [".md"],
+			remarkPlugins: [remarkReadingTime],
 		}),
 	],
 	kit: {

@@ -11,7 +11,6 @@
 
 <header>
 	<h1>Hyper-Z11</h1>
-	<p>A beginner programmer</p>
 
 	<nav>
 		<ul>
@@ -30,3 +29,20 @@
 <footer>
 	<p>Copyright &copy; 2025-Present Hyper-Z11. All rights reserved.</p>
 </footer>
+
+<style lang="scss">
+	@use "$styles/mixins.scss" as mx;
+	nav {
+		& * {
+			@include mx.items-center;
+		}
+
+		& > ul {
+			gap: 1rem;
+
+			& > li > a {
+				gap: 0.25rem;
+			}
+		}
+	}
+</style>

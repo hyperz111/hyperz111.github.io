@@ -23,6 +23,7 @@
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-svelte": "^3.0.0",
 		"globals": "^16.0.0",
+		"mdast-util-to-string": "^4.0.0",
 		"mdsvex": "^0.12.6",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
@@ -37,6 +38,7 @@
 	"dependencies": {
 		"@iconify/svelte": "^5.0.2",
 		"modern-normalize": "^3.0.1",
+		"reading-time": "^1.5.0",
 		"svelte": "^5.0.0"
 	}
 }

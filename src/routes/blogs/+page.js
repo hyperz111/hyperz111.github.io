@@ -7,11 +7,11 @@ export const load = async () => {
 		resolver().then((post) => ({
 			slug: slugFromPath(path),
 			...post.metadata,
-			date: new Date(post.metadata.date)
+			date: new Date(post.metadata.date),
 		})),
 	);
 
-	const blogs = (await Promise.all(postPromises)).sort((a, b) => ((a.date) > (b.date) ? -1 : 1));
+	const blogs = (await Promise.all(postPromises)).sort((a, b) => (a.date > b.date ? -1 : 1));
 
 	return { blogs };
 };

@@ -14,6 +14,9 @@ importers:
       modern-normalize:
         specifier: ^3.0.1
         version: 3.0.1
+      reading-time:
+        specifier: ^1.5.0
+        version: 1.5.0
       svelte:
         specifier: ^5.0.0
         version: 5.40.1
@@ -51,6 +54,9 @@ importers:
       globals:
         specifier: ^16.0.0
         version: 16.4.0
+      mdast-util-to-string:
+        specifier: ^4.0.0
+        version: 4.0.0
       mdsvex:
         specifier: ^0.12.6
         version: 0.12.6(svelte@5.40.1)
@@ -571,6 +577,9 @@ packages:
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
 
+  '@types/unist@3.0.3':
+    resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
+
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -884,6 +893,9 @@ packages:
   magic-string@0.30.19:
     resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
 
+  mdast-util-to-string@4.0.0:
+    resolution: {integrity: sha512-0H44vDimn51F0YwvxSJSm0eCDOJTRlmN0R1yBh4HLj9wiV1Dn0QoXGbvFAWj2hSItVTlCmBF1hqKlIyUBVFLPg==}
+
   mdsvex@0.12.6:
     resolution: {integrity: sha512-pupx2gzWh3hDtm/iDW4WuCpljmyHbHi34r7ktOqpPGvyiM4MyfNgdJ3qMizXdgCErmvYC9Nn/qyjePy+4ss9Wg==}
     peerDependencies:
@@ -1018,6 +1030,9 @@ packages:
   readdirp@4.1.2:
     resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
+
+  reading-time@1.5.0:
+    resolution: {integrity: sha512-onYyVhBNr4CmAxFsKS7bz+uTLRakypIe4R+5A824vBSkQy/hB3fZepoVEf8OVAxzLvK+H/jm9TzpI3ETSm64Kg==}
 
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
@@ -1550,13 +1565,15 @@ snapshots:
 
   '@types/mdast@4.0.4':
     dependencies:
-      '@types/unist': 2.0.11
+      '@types/unist': 3.0.3
 
   '@types/node@22.18.10':
     dependencies:
       undici-types: 6.21.0
 
   '@types/unist@2.0.11': {}
+
+  '@types/unist@3.0.3': {}
 
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
@@ -1875,6 +1892,10 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
+  mdast-util-to-string@4.0.0:
+    dependencies:
+      '@types/mdast': 4.0.4
+
   mdsvex@0.12.6(svelte@5.40.1):
     dependencies:
       '@types/mdast': 4.0.4
@@ -1984,6 +2005,8 @@ snapshots:
   punycode@2.3.1: {}
 
   readdirp@4.1.2: {}
+
+  reading-time@1.5.0: {}
 
   resolve-from@4.0.0: {}
 

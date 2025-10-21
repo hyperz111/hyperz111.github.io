@@ -28,3 +28,30 @@
 		<li><a href="https://tiktok.com/@hyperz111"><Icon icon="simple-icons:tiktok" />TikTok</a></li>
 	</ul>
 </section>
+
+<style lang="scss">
+	@use "$styles/mixins.scss" as mx;
+
+	#about {
+		& > img {
+			border: 3px solid #222;
+			width: 50%;
+			max-width: 100%;
+			float: left;
+			margin-right: 1rem;
+
+			@media (min-width: 768px) {
+				& {
+					width: 25%;
+				}
+			}
+		}
+	}
+
+	#profile {
+		& ul > li > a {
+			@include mx.items-center;
+			gap: 0.5rem;
+		}
+	}
+</style>
