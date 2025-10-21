@@ -12,10 +12,14 @@
 	<p>I have work and contribute in some projects below:</p>
 	<ul class="projects">
 		{#each projects as { name, description, url }}
-			<li><Icon icon="mdi:arrow-right" /><a href={url}>{name} - {description}</a></li>
+			<li class="project-item"><a href={url}>{name} - {description}</a></li>
 		{/each}
 	</ul>
 </section>
 
 <style lang="scss">
+	ul.projects {
+		list-style: disc;
+		padding-inline: 1rem;
+	}
 </style>
