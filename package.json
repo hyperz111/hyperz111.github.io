@@ -18,6 +18,7 @@
 		"@sveltejs/adapter-auto": "^6.0.0",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
+		"@tailwindcss/vite": "^4.1.15",
 		"@types/node": "^22",
 		"eslint": "^9.22.0",
 		"eslint-config-prettier": "^10.0.1",
@@ -27,7 +28,7 @@
 		"mdsvex": "^0.12.6",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
-		"sass": "^1.93.2",
+		"tailwindcss": "^4.1.15",
 		"vite": "^7.0.4"
 	},
 	"pnpm": {
@@ -37,7 +38,6 @@
 	},
 	"dependencies": {
 		"@iconify/svelte": "^5.0.2",
-		"modern-normalize": "^3.0.1",
 		"reading-time": "^1.5.0",
 		"svelte": "^5.0.0"
 	}

@@ -1,48 +1,37 @@
 <script>
-	import "$styles/index.scss";
-	import Icon from "@iconify/svelte";
+	import "$styles/index.css";
+	import Nav from "$components/navigation.svelte";
+	import Footer from "$components/footer.svelte";
 
 	let { children } = $props();
+
+	const navbarMenu = [
+		{
+			name: "Home",
+			icon: "mdi:home",
+			url: "/",
+		},
+		{
+			name: "About",
+			icon: "mdi:account-circle",
+			url: "/about",
+		},
+		{
+			name: "Blogs",
+			icon: "mdi:book",
+			url: "/blogs",
+		},
+	];
 </script>
 
 <svelte:head>
 	<link rel="icon" href="/favicon.png" />
 </svelte:head>
 
-<header>
-	<h1>Hyper-Z11</h1>
+<Nav menu={navbarMenu} />
 
-	<nav>
-		<ul>
-			<li><a href="/"><Icon icon="mdi:home" />Home</a></li>
-			<li><a href="/about"><Icon icon="mdi:info" />About</a></li>
-			<li><a href="/projects"><Icon icon="mdi:paper" />Projects</a></li>
-			<li><a href="/blogs"><Icon icon="mdi:book" />Blogs</a></li>
-		</ul>
-	</nav>
-</header>
-
-<main>
+<main class="p-3 pt-15.5 grow bg-gray-900 text-white">
 	{@render children()}
 </main>
 
-<footer>
-	<p>Copyright &copy; 2025-Present Hyper-Z11. All rights reserved.</p>
-</footer>
-
-<style lang="scss">
-	@use "$styles/mixins.scss" as mx;
-	nav {
-		& * {
-			@include mx.items-center;
-		}
-
-		& > ul {
-			gap: 1rem;
-
-			& > li > a {
-				gap: 0.25rem;
-			}
-		}
-	}
-</style>
+<Footer text="Copyright &copy; 2025-Present Hyper-Z11. All rights reserved." />

@@ -20,6 +20,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$styles: "./src/styles",
+			$components: "./src/components",
 		},
 	},
 };
