@@ -12,11 +12,6 @@
 			url: "https://github.com/hyperz111",
 			icon: "mdi:github",
 		},
-		{
-			name: "TikTok",
-			url: "https://tiktok.com/@hyperz111",
-			icon: "simple-icons:tiktok",
-		},
 	];
 
 	const config = {
@@ -54,7 +49,7 @@
 
 <section id="projects">
 	<h2>Projects</h2>
-	<p>I have work and contribute in some projects below:</p>
+	<p>I have worked and contributed to some projects below:</p>
 	<ul class="list-disc">
 		{#each projects as { name, description, url } (url)}
 			<li class="mx-4"><a href={url}>{name} - {description}</a></li>
