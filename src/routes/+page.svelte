@@ -14,5 +14,5 @@
 	<Head {config} />
 </svelte:head>
 
-<h2 class="text-xl font-extrabold">Welcome to My Homepage 🎉</h2>
-<img src="/memes/meme-1.png" alt="Salam akal sehat" />
+<h2 class="text-xl font-extrabold text-center">Welcome to My Homepage 🎉</h2>
+<img class="w-1/2 md:w-1/4 mx-auto" src="/memes/meme-1.png" alt="Salam akal sehat" />
