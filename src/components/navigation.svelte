@@ -10,7 +10,7 @@
 <!--- TODO: Improve navbar -->
 
 <header class="flex justify-between items-center p-4 bg-gray-800 text-white fixed w-dvw top-0 left-0">
-	<a href="/">Hyper-Z11</a>
+	<a class="font-black" href="/">Hyper-Z11</a>
 	<button class="flex md:hidden" onclick={toggle(true)}><Icon icon="mdi:menu" /></button>
 	<button
 		class="fixed z-98 top-0 left-0 h-dvh w-dvw {opened ? 'backdrop-brightness-50' : 'backdrop-brightness-0 hidden'}"
@@ -18,7 +18,7 @@
 		aria-label="layer"></button>
 	<nav
 		class={opened
-			? "flex z-100 *:flex-col flex-col gap-4 fixed top-0 right-0 bg-gray-900 h-full p-5 w-40"
+			? "flex z-100 *:flex-col flex-col gap-4 fixed top-0 right-0 bg-gray-800 h-full p-5 w-40"
 			: "hidden md:block"}
 		tabindex="-1">
 		{#if opened}

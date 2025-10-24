@@ -18,7 +18,7 @@ Hello everyone, this is my new website. You can check the source code from [this
 Nothing 😁, but you can do this:
 
 ```js
-import isTermux from "is-termux";
+const noop = () => {};
 
-isTermux(); // => "true" if you in Termux
+noop();
 ```

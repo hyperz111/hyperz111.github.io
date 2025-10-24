@@ -21,8 +21,8 @@
 <style>
 	@reference "tailwindcss";
 
-	:global(.blog-main-content pre.shiki) {
-		@apply p-4 overflow-x-auto my-2;
+	:global(.blog-main-content pre.code-highlight) {
+		@apply my-2;
 	}
 
 	:global(.blog-main-content *) {
