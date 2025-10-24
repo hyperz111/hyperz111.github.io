@@ -17,7 +17,7 @@
 </svelte:head>
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-	{#each data.blogs as { title, description, date, slug }}
+	{#each data.blogs as { title, description, date, slug } (date)}
 		<div class="py-2">
 			<h3 class="text-3xl font-extrabold">{title}</h3>
 			<p class="text-sm text-gray-500 my-1">{formatDate(date)}</p>

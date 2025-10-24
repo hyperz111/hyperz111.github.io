@@ -46,7 +46,7 @@
 	<h2>Profile</h2>
 	<p>You can visit my profile if you want 😁</p>
 	<ul class="**:flex">
-		{#each profiles as { name, icon, url }}
+		{#each profiles as { name, icon, url } (url)}
 			<li><a href={url} class="items-center gap-1"><Icon {icon} />{name}</a></li>
 		{/each}
 	</ul>
@@ -56,7 +56,7 @@
 	<h2>Projects</h2>
 	<p>I have work and contribute in some projects below:</p>
 	<ul class="list-disc">
-		{#each projects as { name, description, url }}
+		{#each projects as { name, description, url } (url)}
 			<li class="mx-4"><a href={url}>{name} - {description}</a></li>
 		{/each}
 	</ul>

@@ -25,7 +25,7 @@
 			<button class="ml-auto" onclick={toggle(false)}><Icon icon="mdi:close" /></button>
 		{/if}
 		<ul class="flex gap-4">
-			{#each menu as { name, icon, url }}
+			{#each menu as { name, icon, url } (url)}
 				<li>
 					<a href={url} class="flex items-center gap-1" onclick={() => setTimeout(toggle(false), 100)}
 						><Icon {icon} />{name}</a>
