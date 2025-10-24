@@ -7,9 +7,41 @@
 	<title>{data.frontmatter.title}</title>
 </svelte:head>
 
-<div>
-	<h1>{data.frontmatter.title}</h1>
-	<p>{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime} ({data.frontmatter.wordCount})</p>
-</div>
+<h1 class="text-4xl font-black">{data.frontmatter.title}</h1>
+<p class="my-4 text-xs text-gray-400">{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime} ({data.frontmatter.wordCount})</p>
 
-<data.component />
+<section class="blog-main-content">
+	<data.component />
+</section>
+
+<style>
+	@reference "tailwindcss";
+	
+	:global(.blog-main-content *) {
+		@apply text-sm;
+	}
+
+	:global(.blog-main-content a) {
+		@apply text-blue-500;
+	}
+
+	:global(.blog-main-content a:hover) {
+		@apply text-blue-400;
+	}
+
+	:global(.blog-main-content h2) {
+		@apply text-3xl font-black mb-2 mt-4;
+	}
+
+	:global(.blog-main-content ul) {
+		@apply list-disc;
+	}
+
+	:global(.blog-main-content ol) {
+		@apply list-decimal;
+	}
+
+	:global(.blog-main-content li) {
+		@apply mx-3;
+	}
+</style>

@@ -24,7 +24,7 @@
 </svelte:head>
 
 <section id="about">
-	<img class="w-40 md:w-60 float-left mr-2 border-4 rounded border-gray-700" src="/favicon.png" alt="Profile" />
+	<img class="w-1/3 mx-auto border-4 rounded border-gray-700" src="/favicon.png" alt="Profile" />
 	<h2>About</h2>
 	<p class="**:inline">
 		Hello, i'm <b>Hyper-Z11</b> (he/him). The {yearsOld} years old beginner programmer. My real name is
