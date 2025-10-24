@@ -2,6 +2,7 @@ import config from "@hyperz111/prettier-config";
 
 export default {
 	...config,
+	bracketSameLine: true,
 	plugins: ["prettier-plugin-svelte"],
 	overrides: [
 		{

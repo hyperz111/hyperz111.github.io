@@ -1,8 +1,13 @@
 <script>
+	import Head from "$components/head.svelte";
 	import { formatDate } from "$lib/utils.js";
 
 	let { data } = $props();
 </script>
+
+<svelte:head>
+	<Head title="Blogs" />
+</svelte:head>
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
 	{#each data.blogs as { title, description, date, slug }}

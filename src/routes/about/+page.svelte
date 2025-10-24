@@ -1,5 +1,6 @@
 <script>
 	import Icon from "@iconify/svelte";
+	import Head from "$components/head.svelte";
 	import projects from "./projects.json";
 
 	const bornYear = 2011;
@@ -20,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<Head title="About" />
 </svelte:head>
 
 <section id="about">

@@ -13,18 +13,14 @@
 	<a href="/">Hyper-Z11</a>
 	<button class="flex md:hidden" onclick={toggle(true)}><Icon icon="mdi:menu" /></button>
 	<button
-		class="transition ease-linear delay-100 fixed z-98 top-0 left-0 h-dvh w-dvw backdrop-brightness-{opened
-			? '50'
-			: '0 hidden'}"
+		class="fixed z-98 top-0 left-0 h-dvh w-dvw {opened ? 'backdrop-brightness-50' : 'backdrop-brightness-0 hidden'}"
 		onclick={toggle(false)}
-		aria-label="layer"
-	></button>
+		aria-label="layer"></button>
 	<nav
 		class={opened
 			? "flex z-100 *:flex-col flex-col gap-4 fixed top-0 right-0 bg-gray-900 h-full p-5 w-40"
 			: "hidden md:block"}
-		tabindex="-1"
-	>
+		tabindex="-1">
 		{#if opened}
 			<button class="ml-auto" onclick={toggle(false)}><Icon icon="mdi:close" /></button>
 		{/if}
@@ -32,8 +28,7 @@
 			{#each menu as { name, icon, url }}
 				<li>
 					<a href={url} class="flex items-center gap-1" onclick={() => setTimeout(toggle(false), 100)}
-						><Icon {icon} />{name}</a
-					>
+						><Icon {icon} />{name}</a>
 				</li>
 			{/each}
 		</ul>

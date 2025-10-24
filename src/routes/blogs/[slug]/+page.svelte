@@ -1,15 +1,17 @@
 <script>
+	import Head from "$components/head.svelte";
 	import { formatDate } from "$lib/utils.js";
+
 	let { data } = $props();
 </script>
 
 <svelte:head>
-	<title>{data.frontmatter.title}</title>
+	<Head title={data.frontmatter.title} />
 </svelte:head>
 
 <h1 class="text-4xl font-black">{data.frontmatter.title}</h1>
 <p class="my-4 text-xs text-gray-400">
-	{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime} ({data.frontmatter.wordCount})
+	{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime}
 </p>
 
 <section class="blog-main-content">
@@ -18,6 +20,10 @@
 
 <style>
 	@reference "tailwindcss";
+
+	:global(.blog-main-content pre.shiki) {
+		@apply p-4 overflow-x-auto my-2;
+	}
 
 	:global(.blog-main-content *) {
 		@apply text-sm;

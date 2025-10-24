@@ -9,7 +9,6 @@ export default function remarkReadingTime() {
 		file.data.fm = {
 			...(file.data.fm ?? {}),
 			readingTime: readingTime.text,
-			wordCount: `${readingTime.words} word${readingTime.words > 1 ? "s" : ""}`,
 		};
 	};
 }
