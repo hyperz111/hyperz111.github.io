@@ -3,10 +3,17 @@
 	import { formatDate } from "$lib/utils.js";
 
 	let { data } = $props();
+
+	const config = {
+		title: data.frontmatter.title,
+		description: data.frontmatter.description,
+		type: "blogs",
+		url: `/blogs/${data.frontmatter.slug}`,
+	};
 </script>
 
 <svelte:head>
-	<Head title={data.frontmatter.title} />
+	<Head {config} />
 </svelte:head>
 
 <h1 class="text-4xl font-black">{data.frontmatter.title}</h1>

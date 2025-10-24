@@ -3,10 +3,17 @@
 	import { formatDate } from "$lib/utils.js";
 
 	let { data } = $props();
+
+	const config = {
+		title: "Blogs",
+		description: "Hyper-Z11 blogs",
+		type: "blogs",
+		url: "/blogs",
+	};
 </script>
 
 <svelte:head>
-	<Head title="Blogs" />
+	<Head {config} />
 </svelte:head>
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-4">

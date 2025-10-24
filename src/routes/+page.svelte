@@ -1,9 +1,17 @@
 <script>
 	import Head from "$components/head.svelte";
+
+	const config = {
+		title: "Hyper-Z11",
+		isHome: true,
+		description: "Hyper-Z11 personal website",
+		type: "homepage",
+		url: "",
+	};
 </script>
 
 <svelte:head>
-	<Head title="Hyper-Z11" isHome="true" />
+	<Head {config} />
 </svelte:head>
 
 <h2 class="text-xl font-extrabold">Welcome to My Homepage 🎉</h2>

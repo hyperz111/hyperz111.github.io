@@ -18,10 +18,17 @@
 			icon: "simple-icons:tiktok",
 		},
 	];
+
+	const config = {
+		title: "About",
+		description: "About Hyper-Z11",
+		type: "about",
+		url: "/about",
+	};
 </script>
 
 <svelte:head>
-	<Head title="About" />
+	<Head {config} />
 </svelte:head>
 
 <section id="about">
