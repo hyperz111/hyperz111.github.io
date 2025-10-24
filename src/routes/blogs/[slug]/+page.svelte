@@ -8,7 +8,9 @@
 </svelte:head>
 
 <h1 class="text-4xl font-black">{data.frontmatter.title}</h1>
-<p class="my-4 text-xs text-gray-400">{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime} ({data.frontmatter.wordCount})</p>
+<p class="my-4 text-xs text-gray-400">
+	{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime} ({data.frontmatter.wordCount})
+</p>
 
 <section class="blog-main-content">
 	<data.component />
@@ -16,7 +18,7 @@
 
 <style>
 	@reference "tailwindcss";
-	
+
 	:global(.blog-main-content *) {
 		@apply text-sm;
 	}
