@@ -20,7 +20,6 @@ const config = {
 	kit: {
 		adapter: adapter({
 			pages: "dist",
-			precompress: false,
 			strict: true,
 		}),
 		alias: {
