@@ -12,6 +12,7 @@ Hello everyone, this is my new website. You can check the source code from [this
 - **MDSvex** - Markdown in svelte.
 - **Tailwind CSS** - Utility-first CSS framework.
 - **Iconify** - Icons collection.
+- **highlight.js** - Syntax highlighter.
 
 ## So, What Next?
 
