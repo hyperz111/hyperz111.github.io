@@ -7,14 +7,12 @@
 	const config = {
 		title: data.frontmatter.title,
 		description: data.frontmatter.description,
-		type: "blogs",
+		type: "article",
 		url: `/blogs/${data.frontmatter.slug}`,
 	};
 </script>
 
-<svelte:head>
-	<Head {config} />
-</svelte:head>
+<Head {config} />
 
 <h1 class="text-4xl font-black">{data.frontmatter.title}</h1>
 <p class="my-4 text-xs text-gray-400">

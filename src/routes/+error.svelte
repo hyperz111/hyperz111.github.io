@@ -3,9 +3,9 @@
 	import { page } from "$app/state";
 
 	const config = {
-		title: "Oops",
-		description: "You got error",
-		type: "error",
+		title: "Oops...",
+		description: "You got an error",
+		type: "website",
 		url: false,
 	};
 </script>

@@ -17,14 +17,12 @@
 	const config = {
 		title: "About",
 		description: "About Hyper-Z11",
-		type: "about",
+		type: "profile",
 		url: "/about",
 	};
 </script>
 
-<svelte:head>
-	<Head {config} />
-</svelte:head>
+<Head {config} />
 
 <section id="about">
 	<img class="w-1/3 mx-auto border-4 rounded border-gray-700" src="/favicon.png" alt="Profile" />

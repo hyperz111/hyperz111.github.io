@@ -7,14 +7,13 @@
 	const config = {
 		title: "Blogs",
 		description: "Hyper-Z11 blogs",
-		type: "blogs",
+		type: "website",
 		url: "/blogs",
 	};
 </script>
 
-<svelte:head>
-	<Head {config} />
-</svelte:head>
+<svelte:head></svelte:head>
+<Head {config} />
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
 	{#each data.blogs as { title, description, date, slug } (date)}
