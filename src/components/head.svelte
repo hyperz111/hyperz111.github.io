@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>{title}{!isHome ? "- Hyper-Z11" : ""}</title>
+	<title>{title}{!isHome ? " - Hyper-Z11" : ""}</title>
 	<meta name="description" content={description} />
 
 	<meta property="og:title" content={title} />
