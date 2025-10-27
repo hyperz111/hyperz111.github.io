@@ -2,6 +2,8 @@
 	import "$styles/index.css";
 	import Nav from "$components/navigation.svelte";
 	import Footer from "$components/footer.svelte";
+	import { setContext } from "svelte";
+	import { defineTheme } from "$lib/theme.js";
 
 	let { children } = $props();
 
@@ -22,6 +24,23 @@
 			url: "/blogs",
 		},
 	];
+
+	const themes = ["auto", "light", "dark"];
+	let themeIndex = $state(0);
+	const toggleTheme = () => (themeIndex = (themeIndex + 1) % themes.length);
+	const currentTheme = $derived(themes[themeIndex]);
+
+	setContext("Z11_THEME", {
+		toggleTheme,
+		getTheme: () => currentTheme,
+	});
+
+	const baseTheme = $derived(
+		defineTheme({
+			dark: "bg-neutral-800 text-white",
+			light: "bg-neutral-100 text-black",
+		})[currentTheme],
+	);
 </script>
 
 <svelte:head>
@@ -30,7 +49,7 @@
 
 <Nav menu={navbarMenu} />
 
-<main class="p-3 pt-16 grow bg-neutral-800 text-white">
+<main class="p-3 pt-16 grow {baseTheme}">
 	{@render children()}
 </main>
 
