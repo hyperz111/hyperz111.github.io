@@ -14,47 +14,63 @@
 
 <Head {config} />
 
-<h1 class="text-4xl font-black">{data.frontmatter.title}</h1>
+<h1 class="text-4xl font-black my-2">{data.frontmatter.title}</h1>
 <p class="my-4 text-xs text-gray-400">
 	{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime}
 </p>
 
-<section class="blog-main-content">
+<section class="blog">
 	<data.component />
 </section>
 
 <style>
 	@reference "tailwindcss";
 
-	:global(.blog-main-content pre.code-highlight) {
+	:global(.blog pre, .blog p) {
 		@apply my-2;
 	}
 
-	:global(.blog-main-content *) {
-		@apply text-sm;
-	}
-
-	:global(.blog-main-content a) {
+	:global(.blog a) {
 		@apply text-blue-500;
 	}
 
-	:global(.blog-main-content a:hover) {
+	:global(.blog a:hover) {
 		@apply text-blue-400;
 	}
-
-	:global(.blog-main-content h2) {
-		@apply text-3xl font-black mb-2 mt-4;
+	
+	:global(.blog h2, .blog h3, .blog h4, .blog h5, .blog h6) {
+		@apply font-black mb-2 mt-4;
 	}
 
-	:global(.blog-main-content ul) {
+	:global(.blog h2) {
+		@apply text-3xl;
+	}
+
+	:global(.blog h3) {
+		@apply text-2xl;
+	}
+
+	:global(.blog h4) {
+		@apply text-xl;
+	}
+
+	:global(.blog h5) {
+		@apply text-xl;
+	}
+
+	:global(.blog h6) {
+		@apply text-xl;
+	}
+
+	:global(.blog ul) {
 		@apply list-disc;
 	}
 
-	:global(.blog-main-content ol) {
+	:global(.blog ol) {
 		@apply list-decimal;
 	}
 
-	:global(.blog-main-content li) {
+	:global(.blog li) {
 		@apply mx-3;
 	}
 </style>
