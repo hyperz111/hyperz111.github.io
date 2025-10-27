@@ -37,7 +37,7 @@
 	:global(.blog a:hover) {
 		@apply text-blue-400;
 	}
-	
+
 	:global(.blog h2, .blog h3, .blog h4, .blog h5, .blog h6) {
 		@apply font-black mb-2 mt-4;
 	}
