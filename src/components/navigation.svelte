@@ -18,9 +18,9 @@
 	);
 
 	const themeIcons = {
-		auto: "mdi:dekstop",
-		light: "mdi:sun",
-		dark: "mdi:moon",
+		auto: "mdi:computer",
+		light: "mdi:weather-sunny",
+		dark: "mdi:weather-night",
 	};
 </script>
 
@@ -52,8 +52,10 @@
 			class="flex flex-col gap-4 fixed z-100 top-0 right-0 h-dvh {navbarTheme} p-5 w-35"
 			in:slide={{ axis: "x" }}
 			out:slide={{ axis: "x" }}>
-			<li class="ml-auto"><button onclick={toggle(false)}><Icon icon="mdi:close" /></button></li>
-			<li class="ml-auto"><button onclick={toggleTheme}><Icon icon={themeIcons[getTheme()]} /></button></li>
+			<li class="flex justify-between items-center">
+				<button onclick={toggleTheme}><Icon icon={themeIcons[getTheme()]} /></button>
+				<button onclick={toggle(false)}><Icon icon="mdi:close" /></button>
+			</li>
 			{#each menu as { name, icon, url } (url)}
 				<li>
 					<a href={url} class="flex items-center gap-1" onclick={() => setTimeout(toggle(false), 100)}
