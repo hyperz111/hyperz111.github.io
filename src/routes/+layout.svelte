@@ -30,7 +30,7 @@
 
 <Nav menu={navbarMenu} />
 
-<main class="p-3 pt-16 grow bg-gray-900 text-white">
+<main class="p-3 pt-16 grow bg-neutral-800 text-white">
 	{@render children()}
 </main>
 

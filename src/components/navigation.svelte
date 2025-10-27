@@ -8,7 +8,7 @@
 	const toggle = (state) => () => (opened = state);
 </script>
 
-<nav class="flex justify-between items-center p-4 bg-gray-800 text-white fixed w-dvw top-0 left-0">
+<nav class="flex justify-between items-center p-4 bg-neutral-900 text-white fixed w-dvw top-0 left-0">
 	<a class="font-black" href="/">Hyper-Z11</a>
 	<button class="flex md:hidden" onclick={toggle(true)}><Icon icon="mdi:menu" class="w-5 h-5" /></button>
 	<ul class="hidden md:flex flex-row gap-4">
