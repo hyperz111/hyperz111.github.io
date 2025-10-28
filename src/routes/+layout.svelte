@@ -3,7 +3,7 @@
 	import Nav from "$components/navigation.svelte";
 	import Footer from "$components/footer.svelte";
 	import { setContext } from "svelte";
-	import { defineTheme } from "$lib/theme.js";
+	import { defineTheme, themes } from "$lib/theme.js";
 
 	let { children } = $props();
 
@@ -25,7 +25,6 @@
 		},
 	];
 
-	const themes = ["auto", "light", "dark"];
 	let themeIndex = $state(0);
 	const toggleTheme = () => (themeIndex = (themeIndex + 1) % themes.length);
 	const currentTheme = $derived(themes[themeIndex]);
