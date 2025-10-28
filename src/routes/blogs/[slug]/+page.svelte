@@ -30,6 +30,10 @@
 		@apply my-2;
 	}
 
+	:global(.blog pre.code-highlight > .badge) {
+		@apply absolute text-white right-3 px-3 py-1 bg-neutral-700;
+	}
+
 	:global(.blog a) {
 		@apply text-blue-500;
 	}
