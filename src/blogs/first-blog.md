@@ -8,7 +8,7 @@ Hello everyone, this is my new website. You can check the source code from [this
 
 ## What i use?
 
-- **SvelteKit** - Svelte meta-frameworks.
+- **SvelteKit** - Svelte meta-framework.
 - **MDSvex** - Markdown in svelte.
 - **Tailwind CSS** - Utility-first CSS framework.
 - **Iconify** - Icons collection.
@@ -16,10 +16,9 @@ Hello everyone, this is my new website. You can check the source code from [this
 
 ## So, What Next?
 
-Nothing 😁, but you can do this:
+Nothing 😁
 
 ```js
-const noop = () => {};
-
-noop();
+1 == "1"; // true
+1 === "1"; // false
 ```
