@@ -31,7 +31,11 @@
 	}
 
 	:global(.blog pre.code-highlight > .badge) {
-		@apply absolute text-white right-3 px-3 py-1 bg-neutral-700;
+		@apply absolute text-white right-3 px-3 py-1 bg-neutral-700 transition-opacity duration-500 opacity-0;
+	}
+
+	:global(.blog pre.code-highlight:focus > .badge) {
+		@apply opacity-100;
 	}
 
 	:global(.blog a) {
