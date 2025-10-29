@@ -29,6 +29,7 @@
 		"mdsvex": "^0.12.6",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.7.1",
 		"tailwindcss": "^4.1.15",
 		"vite": "^7.0.4"
 	},

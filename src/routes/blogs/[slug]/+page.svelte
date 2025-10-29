@@ -14,7 +14,7 @@
 
 <Head {config} />
 
-<h1 class="text-4xl font-black my-2">{data.frontmatter.title}</h1>
+<h1 class="my-2 text-4xl font-black">{data.frontmatter.title}</h1>
 <p class="my-4 text-xs text-gray-400">
 	{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime}
 </p>
@@ -31,7 +31,7 @@
 	}
 
 	:global(.blog pre.code-highlight > .badge) {
-		@apply absolute text-white right-3 px-2 py-1 bg-neutral-700 transition-opacity duration-500 opacity-0 font-sans text-sm font-extrabold uppercase;
+		@apply absolute right-3 bg-neutral-700 px-2 py-1 font-sans text-sm font-extrabold text-white uppercase opacity-0 transition-opacity duration-500;
 	}
 
 	:global(.blog pre.code-highlight:focus > .badge) {
@@ -47,7 +47,7 @@
 	}
 
 	:global(.blog h2, .blog h3, .blog h4, .blog h5, .blog h6) {
-		@apply font-black mb-2 mt-4;
+		@apply mt-4 mb-2 font-black;
 	}
 
 	:global(.blog h2) {

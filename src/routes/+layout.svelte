@@ -48,7 +48,7 @@
 
 <Nav menu={navbarMenu} />
 
-<main class="p-3 pt-16 grow {baseTheme}">
+<main class="grow p-3 pt-16 {baseTheme}">
 	{@render children()}
 </main>
 
