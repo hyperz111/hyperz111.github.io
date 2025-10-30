@@ -53,3 +53,9 @@
 </main>
 
 <Footer text="Copyright &copy; 2025-Present Hyper-Z11. All rights reserved." />
+
+<!--
+	Ghost element for register some classes to make
+	theme switcher works properly.
+-->
+<span class={["dark:bg-neutral-800", "dark:bg-neutral-900", "dark:text-white"].join(" ")}></span>
