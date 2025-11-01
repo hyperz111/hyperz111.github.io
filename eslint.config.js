@@ -5,11 +5,11 @@ import js from "@eslint/js";
 import svelte from "eslint-plugin-svelte";
 import globals from "globals";
 import svelteConfig from "./svelte.config.js";
+import { defineConfig } from "eslint/config";
 
 const gitignorePath = fileURLToPath(new URL("./.gitignore", import.meta.url));
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
+export default defineConfig([
 	includeIgnoreFile(gitignorePath),
 	js.configs.recommended,
 	...svelte.configs.recommended,
@@ -27,4 +27,4 @@ export default [
 			"svelte/no-navigation-without-resolve": 0,
 		},
 	},
-];
+]);
