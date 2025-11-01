@@ -19,7 +19,7 @@
 	{#each data.blogs as { title, description, date, slug } (date)}
 		<div class="py-2">
 			<h3 class="text-3xl font-extrabold">{title}</h3>
-			<p class="my-1 text-sm text-gray-500">{formatDate(date)}</p>
+			<p class="my-1 text-sm text-gray-400">{formatDate(date)}</p>
 			<p class="my-2 text-sm">{description}</p>
 			<a class="text-blue-500 hover:text-blue-400" href="/blogs/{slug}">Read more</a>
 		</div>
