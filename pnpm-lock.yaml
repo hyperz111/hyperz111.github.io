@@ -11,6 +11,9 @@ importers:
       '@iconify/svelte':
         specifier: ^5.0.2
         version: 5.0.2(svelte@5.40.1)
+      bootstrap-icons:
+        specifier: ^1.13.1
+        version: 1.13.1
       highlight.js:
         specifier: ^11.11.1
         version: 11.11.1
@@ -714,6 +717,9 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  bootstrap-icons@1.13.1:
+    resolution: {integrity: sha512-ijombt4v6bv5CLeXvRWKy7CuM3TRTuPEuGaGKvTV5cz65rQSY8RQ2JcHt6b90cBBAC7s8fsf2EkQDldzCoXUjw==}
 
   brace-expansion@1.1.12:
     resolution: {integrity: sha512-9T9UjW3r0UW5c1Q7GTwllptXwhvYmEzFhzMfZ9H7FQWt+uZePjZPjBP/W1ZEyZ1twGWom5/56TF4lPcqjnDHcg==}
@@ -1918,6 +1924,8 @@ snapshots:
   axobject-query@4.1.0: {}
 
   balanced-match@1.0.2: {}
+
+  bootstrap-icons@1.13.1: {}
 
   brace-expansion@1.1.12:
     dependencies:
