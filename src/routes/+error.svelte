@@ -1,5 +1,5 @@
 <script>
-	import Head from "$components/head.svelte";
+	import Head from "$components/Head.svelte";
 	import { page } from "$app/state";
 
 	const config = {

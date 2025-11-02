@@ -1,5 +1,5 @@
 <script>
-	let { icon } = $props();
+	let { icon, class: classes, ...rest } = $props();
 </script>
 
-<span class="bi bi-{icon}" {...$$restProps()}></span>
+<span class="bi bi-{icon} {classes}" {...rest}></span>

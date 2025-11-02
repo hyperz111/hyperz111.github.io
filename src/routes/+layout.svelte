@@ -10,17 +10,17 @@
 	const navbarMenu = [
 		{
 			name: "Home",
-			icon: "mdi:home",
+			icon: "house",
 			url: "/",
 		},
 		{
 			name: "About",
-			icon: "mdi:account-circle",
+			icon: "person",
 			url: "/about",
 		},
 		{
 			name: "Blogs",
-			icon: "mdi:book",
+			icon: "book-half",
 			url: "/blogs",
 		},
 	];

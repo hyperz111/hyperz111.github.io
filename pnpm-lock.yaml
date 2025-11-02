@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@iconify/svelte':
-        specifier: ^5.0.2
-        version: 5.0.2(svelte@5.40.1)
       bootstrap-icons:
         specifier: ^1.13.1
         version: 1.13.1
@@ -310,14 +307,6 @@ packages:
     resolution: {integrity: sha512-t89MibeTx0ZBxGCtZ3I0K3Qx1ehJpu1X+dHa57vroicG+3RYDCkmQMvKPzjj+C41kOR17WZD1MRyXbzGSYa6dw==}
     peerDependencies:
       prettier: '>=3.6.2'
-
-  '@iconify/svelte@5.0.2':
-    resolution: {integrity: sha512-1iWUT+1veS/QOAzKDG0NPgBtJYGoJqEPwF97voTm8jw6PQ6yU0hL73lEwFoTGMrZmatLvh9cjRBmeSHHaltmrg==}
-    peerDependencies:
-      svelte: '>4.0.0'
-
-  '@iconify/types@2.0.0':
-    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -1604,13 +1593,6 @@ snapshots:
   '@hyperz111/prettier-config@0.1.1(prettier@3.6.2)':
     dependencies:
       prettier: 3.6.2
-
-  '@iconify/svelte@5.0.2(svelte@5.40.1)':
-    dependencies:
-      '@iconify/types': 2.0.0
-      svelte: 5.40.1
-
-  '@iconify/types@2.0.0': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:

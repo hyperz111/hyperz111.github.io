@@ -1,5 +1,5 @@
 <script>
-	import Icon from "@iconify/svelte";
+	import Icon from "$components/Icon.svelte";
 	import Head from "$components/Head.svelte";
 	import projects from "./projects.json";
 
@@ -10,7 +10,7 @@
 		{
 			name: "GitHub",
 			url: "https://github.com/hyperz111",
-			icon: "mdi:github",
+			icon: "github",
 		},
 	];
 
@@ -30,8 +30,8 @@
 	<p class="**:inline">
 		Hello, i'm <b>Hyper-Z11</b> (he/him). The {yearsOld} years old beginner programmer. My real name is
 		<b>Firjatullah Zeroun</b>. I'm from
-		<a href="https://en.wikipedia.org/wiki/Tangerang"><b><Icon icon="mdi:location" />Tangereng, Banten, Indonesia</b></a>. I
-		like coding as my hobby and contributing to open source projects if i want.
+		<a href="https://en.wikipedia.org/wiki/Tangerang"><b><Icon icon="pin-map" />Tangereng, Banten, Indonesia</b></a>. I like
+		coding as my hobby and contributing to open source projects if i want.
 	</p>
 </section>
 
