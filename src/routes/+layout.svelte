@@ -1,7 +1,7 @@
 <script>
 	import "$styles/index.css";
-	import Nav from "$components/navigation.svelte";
-	import Footer from "$components/footer.svelte";
+	import Navbar from "$components/Navbar.svelte";
+	import Footer from "$components/Footer.svelte";
 	import { setContext } from "svelte";
 	import { defineTheme, themes } from "$lib/theme.js";
 
@@ -46,7 +46,7 @@
 	<link rel="icon" href="/favicon.png" />
 </svelte:head>
 
-<Nav menu={navbarMenu} />
+<Navbar menu={navbarMenu} />
 
 <main class="grow p-3 pt-16 {baseTheme}">
 	{@render children()}

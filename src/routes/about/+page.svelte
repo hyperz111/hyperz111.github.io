@@ -1,6 +1,6 @@
 <script>
 	import Icon from "@iconify/svelte";
-	import Head from "$components/head.svelte";
+	import Head from "$components/Head.svelte";
 	import projects from "./projects.json";
 
 	const bornYear = 2011;

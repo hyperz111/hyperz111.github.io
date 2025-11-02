@@ -1,5 +1,5 @@
 <script>
-	import Head from "$components/head.svelte";
+	import Head from "$components/Head.svelte";
 
 	const config = {
 		title: "Hyper-Z11",
