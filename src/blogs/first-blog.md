@@ -11,7 +11,7 @@ Hello everyone, this is my new website. You can check the source code from [this
 - **SvelteKit** - Svelte meta-framework.
 - **MDSvex** - Markdown in svelte.
 - **Tailwind CSS** - Utility-first CSS framework.
-- **Iconify** - Icons collection.
+- **Bootstrap Icons** - Icons collection.
 - **highlight.js** - Syntax highlighter.
 
 ## So, What Next?

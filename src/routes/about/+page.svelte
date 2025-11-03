@@ -63,8 +63,7 @@
 	}
 
 	section > h2 {
-		font-size: theme(--text-3xl);
-		font-weight: theme(--font-weight-black);
+		@apply text-3xl font-black;
 	}
 
 	a {
