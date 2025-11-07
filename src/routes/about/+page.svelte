@@ -30,8 +30,8 @@
 	<p class="**:inline">
 		Hello, i'm <b>Hyper-Z11</b> (he/him). The {yearsOld} years old beginner programmer. My real name is
 		<b>Firjatullah Zeroun</b>. I'm from
-		<a href="https://en.wikipedia.org/wiki/Tangerang"><b><Icon icon="pin-map" />Tangereng, Banten, Indonesia</b></a>. I like
-		coding as my hobby and contributing to open source projects if i want.
+		<a href="https://en.wikipedia.org/wiki/Indonesia"><b><Icon icon="pin-map" />Indonesia</b></a>. I like coding as my hobby
+		and contributing to open source projects if i want.
 	</p>
 </section>
 
