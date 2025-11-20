@@ -75,6 +75,6 @@
 	}
 
 	:global(.blog li) {
-		@apply mx-3;
+		@apply mx-5;
 	}
 </style>
