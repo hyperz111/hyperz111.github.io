@@ -14,11 +14,6 @@
 			url: "/",
 		},
 		{
-			name: "About",
-			icon: "person",
-			url: "/about",
-		},
-		{
 			name: "Blogs",
 			icon: "book-half",
 			url: "/blogs",
@@ -49,7 +44,9 @@
 <Navbar menu={navbarMenu} />
 
 <main class="grow p-3 pt-16 {baseTheme}">
-	{@render children()}
+	<div class="container mx-auto">
+		{@render children()}
+	</div>
 </main>
 
 <Footer text="Copyright &copy; 2025-Present Hyper-Z11. All rights reserved." />

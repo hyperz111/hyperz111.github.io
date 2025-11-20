@@ -35,7 +35,8 @@
 			</li>
 		{/each}
 		<li class="flex items-center gap-1">
-			<button onclick={toggleTheme} aria-label="switch theme"><Icon icon={themeIcons[getTheme()]} /></button>
+			<button onclick={toggleTheme} aria-label="switch theme" class="cursor-pointer"
+				><Icon icon={themeIcons[getTheme()]} /></button>
 		</li>
 	</ul>
 

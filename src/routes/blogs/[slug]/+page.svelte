@@ -39,11 +39,7 @@
 	}
 
 	:global(.blog a) {
-		@apply text-blue-500;
-	}
-
-	:global(.blog a:hover) {
-		@apply text-blue-400;
+		@apply text-blue-500 hover:text-blue-400;
 	}
 
 	:global(.blog h2, .blog h3, .blog h4, .blog h5, .blog h6) {
