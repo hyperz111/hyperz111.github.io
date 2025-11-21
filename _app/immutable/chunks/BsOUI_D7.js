@@ -1,1 +1,0 @@
-import"./DYOU-fq6.js";import{G as r,H as e}from"./KGsQc0lC.js";import{a as i}from"./BfI5Up8I.js";import{r as n}from"./Bu_qLueT.js";var c=r("<span></span>");function $(t,s){let o=n(s,["$$slots","$$events","$$legacy","icon","class"]);var a=c();i(a,()=>({class:`bi bi-${s.icon??""} ${s.class??""}`,...o})),e(t,a)}export{$ as I};
