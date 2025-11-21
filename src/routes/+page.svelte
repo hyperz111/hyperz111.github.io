@@ -3,9 +3,6 @@
 	import Head from "$components/Head.svelte";
 	import projects from "./projects.json";
 
-	const bornYear = 2011;
-	let yearsOld = $state(new Date().getFullYear() - bornYear);
-
 	const profiles = [
 		{
 			name: "GitHub",
@@ -28,7 +25,7 @@
 <div class="flex flex-col gap-2 md:flex-row">
 	<div>
 		<img class="mx-auto max-h-fit max-w-3xs rounded border-4 border-neutral-600" src="/favicon.png" alt="Profile" />
-		<ul class="flex my-2 flex-row gap-2 mx-auto w-fit flex-wrap-reverse justify-center">
+		<ul class="mx-auto my-2 flex w-fit flex-row flex-wrap-reverse justify-center gap-2">
 			{#each profiles as { name, icon, url } (url)}
 				<li><a href={url} class="flex items-center gap-1"><Icon {icon} />{name}</a></li>
 			{/each}
@@ -38,10 +35,10 @@
 		<section id="about">
 			<h2>About</h2>
 			<p class="**:inline">
-				Hello, i'm <b>Hyper-Z11</b> (he/him). The {yearsOld} years old beginner programmer. My real name is
+				Hello, i'm <b>Hyper-Z11</b> (he/him). The beginner programmer. My real name is
 				<b>Firjatullah Zeroun</b>. I'm from
-				<a href="https://en.wikipedia.org/wiki/Indonesia"><b><Icon icon="pin-map" class="mx-1" />Indonesia</b></a>. I like coding as my
-				hobby and contributing to open source projects if i want.
+				<a href="https://en.wikipedia.org/wiki/Indonesia"><b><Icon icon="pin-map" class="mx-1" />Indonesia</b></a>. I like
+				coding as my hobby and contributing to open source projects if i want.
 			</p>
 		</section>
 

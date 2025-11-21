@@ -25,7 +25,7 @@
 
 <Navbar menu={navbarMenu} />
 
-<main class="grow p-3 pt-16 bg-neutral-800 text-white">
+<main class="grow bg-neutral-800 p-3 pt-16 text-white">
 	<div class="container mx-auto">
 		{@render children()}
 	</div>

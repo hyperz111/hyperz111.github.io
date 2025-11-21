@@ -20,7 +20,7 @@
 		<div class="py-2">
 			<h3 class="text-3xl font-extrabold">{title}</h3>
 			<p class="my-1 text-sm text-gray-400">{formatDate(date)}</p>
-			<p class="my-2 text-md">{description}</p>
+			<p class="text-md my-2">{description}</p>
 			<a class="text-blue-500 hover:text-blue-400" href="/blogs/{slug}">Read more</a>
 		</div>
 	{/each}
