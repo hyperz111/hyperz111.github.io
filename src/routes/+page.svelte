@@ -15,10 +15,11 @@
 	];
 
 	const config = {
-		title: "About",
-		description: "About Hyper-Z11",
-		type: "profile",
-		url: "/about",
+		title: "Hyper-Z11",
+		description: "Hyper-Z11 Personal Website",
+		type: "website",
+		url: "/",
+		isHome: true,
 	};
 </script>
 
