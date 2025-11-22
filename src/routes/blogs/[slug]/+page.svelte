@@ -26,16 +26,15 @@
 <style>
 	@reference "tailwindcss";
 
-	:global(.blog pre, .blog p) {
+	:global(.blog pre:not(pre[tabindex]), .blog p) {
 		@apply my-2;
 	}
 
-	:global(.blog pre.code-highlight > .badge) {
-		@apply absolute right-3 bg-neutral-700 px-2 py-1 font-sans text-sm font-extrabold text-white uppercase opacity-0 transition-opacity duration-500;
+	:global(.blog div.code-highlighter) {
+		@apply w-full;
 	}
-
-	:global(.blog pre.code-highlight:focus > .badge) {
-		@apply opacity-100;
+	:global(.blog div.code-highlight > .badge) {
+		@apply block w-full bg-neutral-700 px-2 py-1 font-sans text-sm font-extrabold text-white;
 	}
 
 	:global(.blog a) {
