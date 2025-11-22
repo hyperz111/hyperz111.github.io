@@ -5,9 +5,12 @@
 
 	const profiles = [
 		{
-			name: "GitHub",
 			url: "https://github.com/hyperz111",
 			icon: "github",
+		},
+		{
+			url: "https://discord.gg/hyperz111",
+			icon: "discord",
 		},
 	];
 
@@ -23,15 +26,19 @@
 <Head {config} />
 
 <div class="flex flex-col gap-2 md:flex-row">
-	<div>
-		<img class="mx-auto max-h-fit max-w-3xs rounded border-4 border-neutral-600" src="/favicon.png" alt="Profile" />
-		<ul class="mx-auto my-2 flex w-fit flex-row flex-wrap-reverse justify-center gap-2">
-			{#each profiles as { name, icon, url } (url)}
-				<li><a href={url} class="flex items-center gap-1"><Icon {icon} />{name}</a></li>
-			{/each}
-		</ul>
+	<div class="flex md:flex-col w-fit">
+		<img class="m-auto max-h-fit max-w-30 md:max-w-60 rounded border-4 border-neutral-600" src="/favicon.png" alt="Profile" />
+		<div class="grow mx-4 md:*:text-center">
+			<h2 class="text-3xl font-semibold">Hyper-Z11</h2>
+			<p class="text-gray-500">The beginner programmer</p>
+			<ul class="md:mx-auto my-2 flex w-fit flex-row flex-wrap-reverse justify-center gap-2">
+				{#each profiles as { icon, url } (url)}
+					<li><a href={url} class="flex items-center gap-1"><Icon {icon} /></a></li>
+				{/each}
+			</ul>
+		</div>
 	</div>
-	<div>
+	<div class="grow">
 		<section id="about">
 			<h2>About</h2>
 			<p class="**:inline">
