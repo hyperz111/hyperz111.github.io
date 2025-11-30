@@ -5,8 +5,8 @@
 	let { data } = $props();
 
 	const config = {
-		title: "Blogs",
-		description: "Hyper-Z11 blogs",
+		title: "Blog",
+		description: "Blog Hyper-Z11",
 		type: "website",
 		url: "/blogs",
 	};

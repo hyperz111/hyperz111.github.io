@@ -16,7 +16,7 @@
 
 	const config = {
 		title: "Hyper-Z11",
-		description: "Hyper-Z11 Personal Website",
+		description: "Situs Web Pribadi Hyper-Z11",
 		type: "website",
 		url: "/",
 		isHome: true,
@@ -33,7 +33,7 @@
 			alt="Profile" />
 		<div class="mx-4 grow md:*:text-center">
 			<h2 class="text-3xl font-semibold">Hyper-Z11</h2>
-			<p class="text-gray-500">The beginner programmer</p>
+			<p class="text-gray-500">Seorang programmer pemula</p>
 			<ul class="my-2 flex w-fit flex-row flex-wrap-reverse justify-center gap-2 md:mx-auto">
 				{#each profiles as { icon, url } (url)}
 					<li><a href={url} class="flex items-center gap-1"><Icon {icon} /></a></li>
@@ -43,18 +43,18 @@
 	</div>
 	<div class="grow">
 		<section id="about">
-			<h2>About</h2>
+			<h2>Tentang</h2>
 			<p class="**:inline">
-				Hello, i'm <b>Hyper-Z11</b> (he/him). The beginner programmer. My real name is
-				<b>Firjatullah Zeroun</b>. I'm from
-				<a href="https://en.wikipedia.org/wiki/Indonesia"><b><Icon icon="pin-map" class="mx-1" />Indonesia</b></a>. I like
-				coding as my hobby and contributing to open source projects if i want.
+				Halo, saya <b>Hyper-Z11</b>. Seorang programmer pemula. Nama asli saya adalah
+				<b>Firjatullah Zeroun</b>. Saya dari
+				<a href="https://en.wikipedia.org/wiki/Indonesia"><b><Icon icon="pin-map" class="mx-1" />Indonesia</b></a>. Saya suka
+				koding sebagai hobi saya dan berkontribusi ke proyek sumber terbuka jika saya mau.
 			</p>
 		</section>
 
 		<section id="projects">
-			<h2>Projects</h2>
-			<p>I have worked and contributed to some projects below:</p>
+			<h2>Proyek</h2>
+			<p>Saya telah bekerja dan berkontribusi ke beberapa proyek di bawah ini:</p>
 			<ul class="list-disc">
 				{#each projects as { name, description, url } (url)}
 					<li class="mx-5"><a href={url}>{name} - {description}</a></li>

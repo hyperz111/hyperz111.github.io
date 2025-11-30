@@ -1,17 +1,17 @@
 [
 	{
 		"name": "Acode-Foundation/Acode",
-		"description": "Powerful text/code editor for Android",
+		"description": "Editor kode yang kuat untuk Android",
 		"url": "https://github.com/Acode-Foundation/Acode"
 	},
 	{
 		"name": "bombshell-dev/clack",
-		"description": "CLI Prompts",
+		"description": "Prompt CLI",
 		"url": "https://github.com/bombshell-dev/clack"
 	},
 	{
 		"name": "eslint/create-config",
-		"description": "Utility to create ESLint config files.",
+		"description": "Utilitas untuk membuat berkas konfigurasi ESLint.",
 		"url": "https://github.com/eslint/create-config"
 	}
 ]
