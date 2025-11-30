@@ -1,7 +1,6 @@
 <script>
 	import "$styles/index.css";
 	import Navbar from "$components/Navbar.svelte";
-	import Footer from "$components/Footer.svelte";
 
 	let { children } = $props();
 
@@ -25,7 +24,7 @@
 
 <Navbar menu={navbarMenu} />
 
-<main class="grow bg-neutral-800 p-3 pt-16 text-white">
+<main class="grow bg-neutral-800 p-3 py-16 text-white">
 	<div class="container mx-auto">
 		{@render children()}
 	</div>
