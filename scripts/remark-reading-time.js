@@ -8,7 +8,7 @@ export default function remarkReadingTime() {
 
 		file.data.fm = {
 			...(file.data.fm ?? {}),
-			readingTime: readingTime.text,
+			readingTime: `${Math.ceil(readingTime.minutes.toFixed(2))} menit`,
 		};
 	};
 }
