@@ -8,10 +8,6 @@
 			url: "https://github.com/hyperz111",
 			icon: "github",
 		},
-		{
-			url: "https://discord.gg/hyperz111",
-			icon: "discord",
-		},
 	];
 
 	const config = {
