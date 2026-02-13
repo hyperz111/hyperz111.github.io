@@ -28,7 +28,7 @@
 </script>
 
 <nav class="fixed top-0 left-0 w-dvw bg-neutral-900 p-4 text-white">
-	<div class="container mx-auto flex items-center justify-between">
+	<div class="mx-auto flex w-full max-w-3xl items-center justify-between">
 		<a class="font-black hover:text-neutral-300" href="/">Hyper-Z11</a>
 		<button class="flex md:hidden" onclick={toggle(true)}><Icon icon="three-dots-vertical" class="h-5 w-5" /></button>
 		<ul class="hidden flex-row gap-4 md:flex">

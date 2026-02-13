@@ -11,8 +11,8 @@
 
 <Navbar />
 
-<main class="grow bg-neutral-800 p-3 py-16 text-white">
-	<div class="container mx-auto">
+<main class="grow bg-neutral-800 p-4 py-16 text-white">
+	<div class="mx-auto w-full max-w-3xl">
 		{@render children()}
 	</div>
 </main>
