@@ -21,7 +21,7 @@
 
 <Head {config} />
 
-<div class="flex flex-col gap-2 md:flex-row">
+<div class="flex flex-col md:flex-row md:gap-4">
 	<div class="flex w-fit md:flex-col">
 		<img
 			class="m-auto max-h-fit max-w-30 rounded border-4 border-neutral-600 md:max-w-60"
