@@ -8,34 +8,11 @@
 	const toggle = (state) => () => (opened = state);
 </script>
 
-<nav class="fixed top-0 left-0 flex w-dvw items-center justify-between bg-neutral-900 p-4 text-white">
-	<a class="font-black" href="/">Hyper-Z11</a>
-	<button class="flex md:hidden" onclick={toggle(true)}><Icon icon="three-dots-vertical" class="h-5 w-5" /></button>
-	<ul class="hidden flex-row gap-4 md:flex">
-		{#each menu as { name, icon, url } (url)}
-			<li>
-				<a href={url} class="flex items-center gap-1" onclick={() => setTimeout(toggle(false), 100)}
-					><Icon {icon} />{name}</a>
-			</li>
-		{/each}
-	</ul>
-
-	<!--- Mobile sidebar -->
-	{#if opened}
-		<button
-			class="fixed top-0 left-0 z-98 h-dvh w-dvw backdrop-brightness-50"
-			onclick={toggle(false)}
-			aria-label="layer"
-			in:fade
-			out:fade></button>
-
-		<ul
-			class="fixed top-0 right-0 z-100 flex h-dvh w-35 flex-col gap-4 bg-neutral-900 p-5 text-white"
-			in:slide={{ axis: "x" }}
-			out:slide={{ axis: "x" }}>
-			<li class="flex items-center justify-between">
-				<button onclick={toggle(false)}><Icon icon="x" /></button>
-			</li>
+<nav class="fixed top-0 left-0 w-dvw bg-neutral-900 p-4 text-white">
+	<div class="container mx-auto flex items-center justify-between">
+		<a class="font-black" href="/">Hyper-Z11</a>
+		<button class="flex md:hidden" onclick={toggle(true)}><Icon icon="three-dots-vertical" class="h-5 w-5" /></button>
+		<ul class="hidden flex-row gap-4 md:flex">
 			{#each menu as { name, icon, url } (url)}
 				<li>
 					<a href={url} class="flex items-center gap-1" onclick={() => setTimeout(toggle(false), 100)}
@@ -43,5 +20,30 @@
 				</li>
 			{/each}
 		</ul>
-	{/if}
+
+		<!--- Mobile sidebar -->
+		{#if opened}
+			<button
+				class="fixed top-0 left-0 z-98 h-dvh w-dvw backdrop-brightness-50"
+				onclick={toggle(false)}
+				aria-label="layer"
+				in:fade
+				out:fade></button>
+
+			<ul
+				class="fixed top-0 right-0 z-100 flex h-dvh w-35 flex-col gap-4 bg-neutral-900 p-5 text-white"
+				in:slide={{ axis: "x" }}
+				out:slide={{ axis: "x" }}>
+				<li class="flex items-center justify-between">
+					<button onclick={toggle(false)}><Icon icon="x" /></button>
+				</li>
+				{#each menu as { name, icon, url } (url)}
+					<li>
+						<a href={url} class="flex items-center gap-1" onclick={() => setTimeout(toggle(false), 100)}
+							><Icon {icon} />{name}</a>
+					</li>
+				{/each}
+			</ul>
+		{/if}
+	</div>
 </nav>
