@@ -15,6 +15,11 @@
 			icon: "book-half",
 			url: "/blogs",
 		},
+		{
+			name: "GitHub",
+			url: "https://github.com/hyperz111",
+			icon: "github",
+		},
 	];
 </script>
 

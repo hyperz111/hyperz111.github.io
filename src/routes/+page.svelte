@@ -3,13 +3,6 @@
 	import Head from "$components/Head.svelte";
 	import projects from "./projects.json";
 
-	const profiles = [
-		{
-			url: "https://github.com/hyperz111",
-			icon: "github",
-		},
-	];
-
 	const config = {
 		title: "Hyper-Z11",
 		description: "Situs Web Pribadi Hyper-Z11",
@@ -21,20 +14,15 @@
 
 <Head {config} />
 
-<div class="flex flex-col md:flex-row md:gap-4">
-	<div class="flex w-fit md:flex-col">
+<div class="flex flex-col">
+	<div class="mx-auto flex w-fit flex-col p-4">
 		<img
 			class="m-auto max-h-fit max-w-30 rounded border-4 border-neutral-600 md:max-w-60"
 			src="/favicon.png"
 			alt="Profile" />
-		<div class="mx-4 grow md:*:text-center">
+		<div class="mx-4 grow text-center">
 			<h2 class="text-3xl font-semibold">Hyper-Z11</h2>
 			<p class="text-gray-500">Seorang programmer pemula</p>
-			<ul class="my-2 flex w-fit flex-row flex-wrap-reverse justify-center gap-2 md:mx-auto">
-				{#each profiles as { icon, url } (url)}
-					<li><a href={url} class="flex items-center gap-1"><Icon {icon} /></a></li>
-				{/each}
-			</ul>
 		</div>
 	</div>
 	<div class="grow">
