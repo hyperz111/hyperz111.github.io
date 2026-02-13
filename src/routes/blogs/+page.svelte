@@ -15,7 +15,7 @@
 <svelte:head></svelte:head>
 <Head {config} />
 
-<section class="grid grid-cols-1 gap-4 md:grid-cols-2">
+<section class="grid grid-cols-1 gap-4">
 	{#each data.blogs as { title, description, date, slug } (date)}
 		<div class="py-2">
 			<h3 class="text-3xl font-extrabold">{title}</h3>
