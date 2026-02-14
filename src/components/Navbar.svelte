@@ -5,7 +5,7 @@
 	const pages = [
 		{
 			name: "Blog",
-			icon: "book-half",
+			icon: "bookstack",
 			url: "/blogs",
 		},
 	];
@@ -27,7 +27,7 @@
 		<ul class="flex flex-row gap-4">
 			{#each menu as { name, icon, url } (url)}
 				<li>
-					<a href={url} title={name} class="hover:text-neutral-300">
+					<a href={url} title={name} class="flex gap-2 hover:text-neutral-300">
 						<Icon {icon} />
 						<span class="hidden md:inline">{name}</span>
 					</a>

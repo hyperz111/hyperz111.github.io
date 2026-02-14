@@ -59,7 +59,7 @@
 				<p class="**:inline">
 					Halo, saya <b>Hyper-Z11</b>. Seorang programmer pemula. Nama asli saya adalah
 					<b>Firjatullah Zeroun</b>. Saya dari
-					<a href="https://id.wikipedia.org/wiki/Indonesia"><b><Icon icon="pin-map" class="mx-1" />Indonesia</b></a>. Saya
+					<a href="https://id.wikipedia.org/wiki/Indonesia"><b><Icon icon="googlemaps" class="h-5" />Indonesia</b></a>. Saya
 					suka koding sebagai hobi saya dan berkontribusi ke proyek sumber terbuka jika saya mau. Anda mungkin tidak akan
 					menemukan banyak hal disini. Jadi terima kasih sudah berkunjung. Dan jika anda mau, mungkin anda bisa mengunjungi
 					<a href="/blogs">kumpulan blog saya</a>.

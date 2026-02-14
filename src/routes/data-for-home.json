@@ -29,7 +29,7 @@
 		},
 		{
 			"name": "JSON",
-			"icon": "braces",
+			"icon": "json",
 			"color": "orange"
 		},
 		{
@@ -39,7 +39,7 @@
 		},
 		{
 			"name": "HTML",
-			"icon": "code-slash",
+			"icon": "html5",
 			"color": "orange"
 		},
 		{
@@ -56,22 +56,22 @@
 		},
 		{
 			"name": "Node.js",
-			"icon": "app",
+			"icon": "nodedotjs",
 			"color": "green"
 		},
 		{
 			"name": "Vite",
-			"icon": "lightning",
+			"icon": "vite",
 			"color": "darkviolet"
 		},
 		{
 			"name": "NPM",
-			"icon": "app",
+			"icon": "npm",
 			"color": "red"
 		},
 		{
 			"name": "PNPM",
-			"icon": "app",
+			"icon": "pnpm",
 			"color": "yellow"
 		}
 	]
