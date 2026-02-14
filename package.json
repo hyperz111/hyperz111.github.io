@@ -39,9 +39,10 @@
 		]
 	},
 	"dependencies": {
+		"@iconify-json/simple-icons": "^1.2.70",
 		"bootstrap-icons": "^1.13.1",
-		"highlight.js": "^11.11.1",
 		"reading-time": "^1.5.0",
+		"shiki": "^3.22.0",
 		"svelte": "^5.0.0"
 	}
 }

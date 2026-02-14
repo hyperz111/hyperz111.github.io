@@ -33,6 +33,7 @@
 	:global(.blog div.code-highlighter) {
 		@apply w-full;
 	}
+
 	:global(.blog div.code-highlight > .badge) {
 		@apply block w-full bg-neutral-700 px-2 py-1 font-sans text-sm font-extrabold text-white;
 	}
