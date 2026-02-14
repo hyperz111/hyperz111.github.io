@@ -1,3 +1,28 @@
 @import "tailwindcss";
 @import "highlight.js/styles/tokyo-night-dark.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+@keyframes down {
+	from {
+		transform: translateY(-50%);
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes up {
+	from {
+		transform: translateY(50%);
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@theme {
+	--animate-down: down 1s linear;
+	--animate-up: up 1s linear;
+}

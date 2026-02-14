@@ -11,8 +11,8 @@
 
 <Navbar />
 
-<main class="grow bg-neutral-800 p-4 py-16 text-white">
-	<div class="mx-auto w-full max-w-3xl">
+<main class="grow bg-neutral-950 p-4 py-16 text-white">
+	<div class="mx-auto w-full max-w-3xl animate-up">
 		{@render children()}
 	</div>
 </main>

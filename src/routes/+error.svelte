@@ -14,7 +14,7 @@
 	<Head {config} />
 </svelte:head>
 
-<section class="flex h-3/4 items-center justify-center">
+<section class="flex items-center justify-center">
 	<div class="text-center">
 		<h2 class="my-2 text-6xl font-extrabold">{page.status}</h2>
 		<p class="text-sm text-gray-500">Jika anda di sini, Mari saya jelaskan ini.</p>
