@@ -1,7 +1,7 @@
 <script>
 	import Icon from "$components/Icon.svelte";
 	import Head from "$components/Head.svelte";
-	import projects from "./projects.json";
+	import data from "./data-for-home.json";
 	import { fade } from "svelte/transition";
 	import { onMount } from "svelte";
 
@@ -25,50 +25,72 @@
 			clearInterval(interval);
 		};
 	});
+
+	const gridMenu = [
+		["Bahasa Pemograman", "languages"],
+		["Alat-alat", "tools"],
+	];
 </script>
 
 <Head {config} />
 
-<div class="flex flex-col md:flex-row">
-	<div class="mx-auto flex w-fit flex-col p-4">
-		<img
-			class="m-auto max-h-fit max-w-30 rounded border-4 border-neutral-600 md:max-w-60"
-			src="/favicon.png"
-			alt="Profile" />
-		<div class="mx-4 grow text-center">
-			<h2 class="text-3xl font-semibold">Hyper-Z11</h2>
-			<p class="text-gray-500">
-				Seorang
-				{#key whatIndex}
-					<span in:fade={{ duration: 300, delay: 300 }} out:fade={{ duration: 300 }}>
-						{what[whatIndex]}
-					</span>
-				{/key}
-			</p>
+<div>
+	<div class="flex flex-col md:flex-row">
+		<div class="mx-auto flex w-fit flex-col p-4">
+			<img
+				class="m-auto max-h-fit max-w-30 rounded border-4 border-neutral-600 md:max-w-60"
+				src="/favicon.png"
+				alt="Profile" />
+			<div class="mx-4 grow text-center">
+				<h2 class="text-3xl font-semibold">Hyper-Z11</h2>
+				<p class="text-gray-500">
+					Seorang
+					{#key whatIndex}
+						<span in:fade={{ duration: 300, delay: 300 }} out:fade={{ duration: 300 }}>
+							{what[whatIndex]}
+						</span>
+					{/key}
+				</p>
+			</div>
+		</div>
+		<div class="grow">
+			<section id="about">
+				<h2>Tentang</h2>
+				<p class="**:inline">
+					Halo, saya <b>Hyper-Z11</b>. Seorang programmer pemula. Nama asli saya adalah
+					<b>Firjatullah Zeroun</b>. Saya dari
+					<a href="https://id.wikipedia.org/wiki/Indonesia"><b><Icon icon="pin-map" class="mx-1" />Indonesia</b></a>. Saya
+					suka koding sebagai hobi saya dan berkontribusi ke proyek sumber terbuka jika saya mau. Anda mungkin tidak akan
+					menemukan banyak hal disini. Jadi terima kasih sudah berkunjung. Dan jika anda mau, mungkin anda bisa mengunjungi
+					<a href="/blogs">kumpulan blog saya</a>.
+				</p>
+			</section>
+
+			<section id="projects">
+				<h2>Proyek</h2>
+				<p>Saya telah bekerja dan berkontribusi ke beberapa proyek di bawah ini:</p>
+				<ul class="list-disc">
+					{#each data.projects as { name, description, url } (url)}
+						<li class="mx-5"><a href={url}>{name} - {description}</a></li>
+					{/each}
+				</ul>
+			</section>
 		</div>
 	</div>
-	<div class="grow">
-		<section id="about">
-			<h2>Tentang</h2>
-			<p class="**:inline">
-				Halo, saya <b>Hyper-Z11</b>. Seorang programmer pemula. Nama asli saya adalah
-				<b>Firjatullah Zeroun</b>. Saya dari
-				<a href="https://id.wikipedia.org/wiki/Indonesia"><b><Icon icon="pin-map" class="mx-1" />Indonesia</b></a>. Saya suka
-				koding sebagai hobi saya dan berkontribusi ke proyek sumber terbuka jika saya mau. Anda mungkin tidak akan menemukan
-				banyak hal disini. Jadi terima kasih sudah berkunjung. Dan jika anda mau, mungkin anda bisa mengunjungi
-				<a href="/blogs">kumpulan blog saya</a>.
-			</p>
-		</section>
-
-		<section id="projects">
-			<h2>Proyek</h2>
-			<p>Saya telah bekerja dan berkontribusi ke beberapa proyek di bawah ini:</p>
-			<ul class="list-disc">
-				{#each projects as { name, description, url } (url)}
-					<li class="mx-5"><a href={url}>{name} - {description}</a></li>
-				{/each}
-			</ul>
-		</section>
+	<div>
+		{#each gridMenu as menu}
+			<section>
+				<h2>{menu[0]}</h2>
+				<div class="grid gap-2 min-[375px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+					{#each data[menu[1]] as { name, icon, color } (name)}
+						<div class="group flex cursor-pointer gap-2 rounded-xl border-2 border-neutral-300 p-4 hover:scale-90">
+							<Icon {icon} style="color: {color}" />
+							<span class="">{name}</span>
+						</div>
+					{/each}
+				</div>
+			</section>
+		{/each}
 	</div>
 </div>
 
@@ -80,7 +102,7 @@
 	}
 
 	section > h2 {
-		@apply text-3xl font-black;
+		@apply mb-2 text-3xl font-black;
 	}
 
 	a {

@@ -1,0 +1,78 @@
+{
+	"projects": [
+		{
+			"name": "Acode-Foundation/Acode",
+			"description": "Editor kode yang kuat untuk Android",
+			"url": "https://github.com/Acode-Foundation/Acode"
+		},
+		{
+			"name": "bombshell-dev/clack",
+			"description": "Prompt CLI",
+			"url": "https://github.com/bombshell-dev/clack"
+		},
+		{
+			"name": "eslint/create-config",
+			"description": "Utilitas untuk membuat berkas konfigurasi ESLint.",
+			"url": "https://github.com/eslint/create-config"
+		}
+	],
+	"languages": [
+		{
+			"name": "JavaScript",
+			"icon": "javascript",
+			"color": "yellow"
+		},
+		{
+			"name": "TypeScript",
+			"icon": "typescript",
+			"color": "cornflowerblue"
+		},
+		{
+			"name": "JSON",
+			"icon": "braces",
+			"color": "orange"
+		},
+		{
+			"name": "Markdown",
+			"icon": "markdown",
+			"color": "white"
+		},
+		{
+			"name": "HTML",
+			"icon": "code-slash",
+			"color": "orange"
+		},
+		{
+			"name": "CSS",
+			"icon": "css",
+			"color": "darkorchid"
+		}
+	],
+	"tools": [
+		{
+			"name": "Git",
+			"icon": "git",
+			"color": "orangered"
+		},
+		{
+			"name": "Node.js",
+			"icon": "app",
+			"color": "green"
+		},
+		{
+			"name": "Vite",
+			"icon": "lightning",
+			"color": "darkviolet"
+		},
+		{
+			"name": "NPM",
+			"icon": "app",
+			"color": "red"
+		},
+		{
+			"name": "PNPM",
+			"icon": "app",
+			"color": "yellow"
+		}
+	]
+}
