@@ -29,7 +29,14 @@
 	const gridMenu = [
 		["Bahasa Pemograman", "languages"],
 		["Alat-alat", "tools"],
+		["Kerangka Kerja & Pustaka", "frameworkLibrary"],
 	];
+
+	function applyStyle(style) {
+		return (event) => {
+			event.target.style = style;
+		};
+	}
 </script>
 
 <Head {config} />
@@ -83,9 +90,14 @@
 				<h2>{menu[0]}</h2>
 				<div class="grid gap-2 min-[375px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
 					{#each data[menu[1]] as { name, icon, color } (name)}
-						<div class="group flex cursor-pointer gap-2 rounded-xl border-2 border-neutral-300 p-4 hover:scale-90">
-							<Icon {icon} style="color: {color}" />
-							<span class="">{name}</span>
+						<!-- svelte-ignore a11y_no_static_element_interactions -- how to fix it? -->
+						<div
+							class="group flex cursor-pointer gap-2 rounded-xl border-2 border-neutral-300 p-4 hover:scale-90"
+							onmouseenter={applyStyle(`color: ${color}; border-color: ${color};`)}
+							onmouseleave={applyStyle(``)}
+							aria-label={name}>
+							<Icon {icon} />
+							<span>{name}</span>
 						</div>
 					{/each}
 				</div>

@@ -35,12 +35,12 @@
 		{
 			"name": "Markdown",
 			"icon": "markdown",
-			"color": "white"
+			"color": "gray"
 		},
 		{
 			"name": "HTML",
 			"icon": "html5",
-			"color": "orange"
+			"color": "orangered"
 		},
 		{
 			"name": "CSS",
@@ -60,9 +60,29 @@
 			"color": "green"
 		},
 		{
+			"name": "ESBuild",
+			"icon": "esbuild",
+			"color": "yellow"
+		},
+		{
+			"name": "RollUp",
+			"icon": "rollupdotjs",
+			"color": "red"
+		},
+		{
 			"name": "Vite",
 			"icon": "vite",
 			"color": "darkviolet"
+		},
+		{
+			"name": "ESLint",
+			"icon": "eslint",
+			"color": "darkorchid"
+		},
+		{
+			"name": "Prettier",
+			"icon": "prettier",
+			"color": "darkslategray"
 		},
 		{
 			"name": "NPM",
@@ -73,6 +93,33 @@
 			"name": "PNPM",
 			"icon": "pnpm",
 			"color": "yellow"
+		}
+	],
+	"frameworkLibrary": [
+		{
+			"name": "PostCSS",
+			"icon": "postcss",
+			"color": "red"
+		},
+		{
+			"name": "Svelte",
+			"icon": "svelte",
+			"color": "orangered"
+		},
+		{
+			"name": "SvelteKit",
+			"icon": "svelte",
+			"color": "orangered"
+		},
+		{
+			"name": "SASS",
+			"icon": "sass",
+			"color": "pink"
+		},
+		{
+			"name": "Tailwind CSS",
+			"icon": "tailwindcss",
+			"color": "cyan"
 		}
 	]
 }
