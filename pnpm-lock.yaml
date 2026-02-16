@@ -28,8 +28,8 @@ importers:
         specifier: ^9.22.0
         version: 9.37.0
       '@hyperz111/prettier-config':
-        specifier: ^1.0.0
-        version: 1.0.0(prettier@3.6.2)(svelte@5.40.1)
+        specifier: ^1.0.3
+        version: 1.0.3(prettier@3.6.2)(svelte@5.40.1)
       '@sveltejs/adapter-auto':
         specifier: ^6.0.0
         version: 6.1.1(@sveltejs/kit@2.47.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.40.1)(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.93.2)))(svelte@5.40.1)(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.93.2)))
@@ -69,9 +69,6 @@ importers:
       prettier:
         specifier: ^3.4.2
         version: 3.6.2
-      prettier-plugin-svelte:
-        specifier: ^3.3.3
-        version: 3.4.0(prettier@3.6.2)(svelte@5.40.1)
       prettier-plugin-tailwindcss:
         specifier: ^0.7.1
         version: 0.7.1(prettier-plugin-svelte@3.4.0(prettier@3.6.2)(svelte@5.40.1))(prettier@3.6.2)
@@ -303,8 +300,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@hyperz111/prettier-config@1.0.0':
-    resolution: {integrity: sha512-BKqcxqATtFQnlhmP6M+gqd37ODjNJG5srCx8ig5jM5QExNnVIKIgfk0RMYy0f8VNrr4d9mMCey4fJexbBlXxRQ==}
+  '@hyperz111/prettier-config@1.0.3':
+    resolution: {integrity: sha512-igN2GGp72k60ZdTyNTuiFHuyLINmjqLbl4SxNRpbLdGPVka95Q4j9sHpMe3VUIaNPfSdNV70W2X4KneoLDmx3w==}
     peerDependencies:
       prettier: '>=3.6.2'
 
@@ -1716,7 +1713,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@hyperz111/prettier-config@1.0.0(prettier@3.6.2)(svelte@5.40.1)':
+  '@hyperz111/prettier-config@1.0.3(prettier@3.6.2)(svelte@5.40.1)':
     dependencies:
       prettier: 3.6.2
       prettier-plugin-svelte: 3.4.0(prettier@3.6.2)(svelte@5.40.1)
