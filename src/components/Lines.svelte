@@ -17,7 +17,7 @@
 
 	onMount(() => {
 		const context = canvas.getContext("2d");
-		context.strokeStyle = "white";
+		context.strokeStyle = "#6a7282";
 
 		function animate() {
 			context.clearRect(0, 0, width, height);
