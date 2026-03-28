@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte";
 
-	const { height = $bindable(0), width = $bindable(0), ...rest } = $props();
+	const { height = $bindable(0), width = $bindable(0) } = $props();
 
 	let perHeight = $derived(Math.floor(height / 4));
 	let perWidth = $derived(Math.floor(width / 4));
