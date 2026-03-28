@@ -1,5 +1,4 @@
 <script>
-	import { fade, slide } from "svelte/transition";
 	import Icon from "$components/Icon.svelte";
 
 	const pages = [
@@ -21,7 +20,7 @@
 	const menu = [...pages, ...social];
 </script>
 
-<nav class="fixed top-0 left-0 w-dvw animate-down bg-neutral-950 p-4 text-white drop-shadow-lg drop-shadow-black">
+<nav class="fixed top-0 left-0 z-1 w-dvw animate-down bg-neutral-950 p-4 text-white drop-shadow-lg drop-shadow-black">
 	<div class="mx-auto flex w-full max-w-3xl items-center justify-between">
 		<a href="/" class="hover:text-neutral-300">Z11</a>
 		<ul class="flex flex-row gap-4">
