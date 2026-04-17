@@ -16,6 +16,7 @@
 <svelte:head>
 	<title>{title}{!isHome ? " - Hyper-Z11" : ""}</title>
 	<meta name="description" content={description} />
+	<meta name="google-site-verification" content="4uDolj24sCSRqDkEoBUWcz7oafNptj-pA_oAnF8szyU" />
 
 	<meta property="og:title" content={title} />
 	<meta name="og:description" content={description} />
