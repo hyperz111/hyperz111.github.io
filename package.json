@@ -1,15 +1,21 @@
 {
 	"name": "hyperz111",
-	"private": true,
 	"version": "0.0.1",
+	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
+		"dev": "vite dev",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"prepare": "svelte-kit sync || echo ''",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@iconify-json/simple-icons": "^1.2.70",
+		"reading-time": "^1.5.0",
+		"shiki": "^3.22.0",
+		"svelte": "^5.0.0"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
@@ -36,11 +42,5 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
-	},
-	"dependencies": {
-		"@iconify-json/simple-icons": "^1.2.70",
-		"reading-time": "^1.5.0",
-		"shiki": "^3.22.0",
-		"svelte": "^5.0.0"
 	}
 }
