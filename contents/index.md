@@ -1,6 +1,6 @@
 ---
 title: Hyper-Z11
-description: Hyper-Z11's personal website
+description: My personal website
 ---
 
 # Hyper-Z11

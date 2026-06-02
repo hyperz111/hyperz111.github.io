@@ -1,4 +1,4 @@
 ---
 title: Blogs
-description: Hyper-Z11's blogs
+description: My blogs
 ---
