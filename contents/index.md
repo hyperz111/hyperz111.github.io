@@ -1,6 +1,6 @@
 ---
 title: Hyper-Z11
-description: Situs Web Personal Hyper-Z11
+description: Situs Web Pribadi Hyper-Z11
 ---
 
 ## Tentang
@@ -11,7 +11,7 @@ Anda mungkin tidak akan menemukan apa-apa disini. Jadi terima kasih sudah berkun
 
 ## Proyek
 
-I have working and contribute to some projects on below:
+Saya telah bekerja dan berkontribusi ke beberapa proyek di bawah ini.
 
 - [Acode-Foundation/Acode](https://github.com/Acode-Foundation/Acode) - Editor kode yang kuat untuk Android
 - [bombshell-dev/clack](https://github.com/bombshell-dev/clack) - Pustaka untuk membuat prompt di CLI
