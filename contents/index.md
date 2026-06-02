@@ -1,28 +1,23 @@
 ---
 title: Hyper-Z11
-description: My personal website
+description: Situs Web Personal Hyper-Z11
 ---
 
-# Hyper-Z11
+## Tentang
 
-Welcome to my personal site :).
+Halo, saya Hyper-Z11, seorang programmer pemula. Saya dari Indonesia.
+Saya suka koding sebagai hobiku dan berkontribusi ke proyek sumber terbuka jika saya mau.
+Anda mungkin tidak akan menemukan apa-apa disini. Jadi terima kasih sudah berkunjung.
 
-## About
-
-Hello, I'm Hyper-Z11, the beginner programmer. I'm from [Indonesia](https://wikipedia.org/wiki/Indonesia).
-I like coding as my hobby and contribute in open source projects if I want.
-You maybe don't found anything in here. So thank you for visiting.
-And if you want, maybe you can visit [my blogs](/blogs).
-
-## Projects
+## Proyek
 
 I have working and contribute to some projects on below:
 
-- [Acode-Foundation/Acode](https://github.com/Acode-Foundation/Acode) - Powerful editor for Android
-- [bombshell-dev/clack](https://github.com/bombshell-dev/clack) - CLI Prompts
-- [eslint/create-config](https://github.com/eslint/create-config) - Utility to create ESLint config files
+- [Acode-Foundation/Acode](https://github.com/Acode-Foundation/Acode) - Editor kode yang kuat untuk Android
+- [bombshell-dev/clack](https://github.com/bombshell-dev/clack) - Pustaka untuk membuat prompt di CLI
+- [eslint/create-config](https://github.com/eslint/create-config) - Utilitas untuk membuat berkas konfigurasi ESLint
 
-## Languages
+## Bahasa
 
 - JavaScript
 - TypeScript
@@ -31,7 +26,7 @@ I have working and contribute to some projects on below:
 - HTML
 - CSS
 
-## Tools
+## Alat-alat
 
 - Git
 - Node.js
@@ -41,7 +36,7 @@ I have working and contribute to some projects on below:
 - npm
 - pnpm
 
-## Frameworks & Libraries
+## Kerangka Kerja & Pustaka
 
 - Svelte
 - SvelteKit
