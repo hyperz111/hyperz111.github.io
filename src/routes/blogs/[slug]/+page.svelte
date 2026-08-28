@@ -15,9 +15,7 @@
 <Head {config} />
 
 <h1 class="my-2 text-4xl font-black">{data.frontmatter.title}</h1>
-<p class="my-4 text-xs text-gray-400">
-	{formatDate(data.frontmatter.date)} - {data.frontmatter.readingTime}
-</p>
+<p class="my-4 text-xs text-gray-400">{formatDate(data.frontmatter.date)}</p>
 
 <section class="blog">
 	<data.component />
