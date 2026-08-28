@@ -9,6 +9,9 @@ const config = {
 		vitePreprocess(),
 		mdsvex({
 			extensions: [".md"],
+			highlight: {
+				highlighter: (code) => `<pre class="code-highlight"><code>${code}</code></pre>`,
+			},
 		}),
 	],
 	kit: {
