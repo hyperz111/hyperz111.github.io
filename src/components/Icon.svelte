@@ -23,6 +23,5 @@
 	viewBox="0 0 {height} {height}"
 	class={classes}
 	{...rest}>
-	<!-- eslint-disable-next-line svelte/no-at-html-tags -- only from iconify data -->
 	{@html icons[icon] ?? ""}
 </svg>

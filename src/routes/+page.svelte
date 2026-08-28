@@ -90,7 +90,6 @@
 				<h2>{menu[0]}</h2>
 				<div class="grid gap-2 min-[375px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
 					{#each data[menu[1]] as { name, icon, color } (name)}
-						<!-- svelte-ignore a11y_no_static_element_interactions -->
 						<div
 							class="group flex cursor-pointer gap-2 rounded-xl border-2 border-neutral-300 p-4 hover:scale-90"
 							onmouseenter={applyStyle(`color: ${color}; border-color: ${color};`)}
