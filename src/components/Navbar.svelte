@@ -1,21 +1,30 @@
 <script>
 	import Icon from "$components/Icon.svelte";
 
-	const pages = [
+	const menus = [
+		{
+			name: "Home",
+			url: "/",
+		},
 		{
 			name: "Blog",
-			icon: "bookstack",
 			url: "/blogs",
 		},
 	];
-
-	const social = [
-		{
-			name: "GitHub",
-			url: "https://github.com/hyperz111",
-			icon: "github",
-		},
-	];
-
-	const menu = [...pages, ...social];
 </script>
+
+<nav>
+	<ul>
+		{#each menus as menu}
+			<li>
+				<a href={menu.url}>{menu.name}</a>
+			</li>
+		{/each}
+	</ul>
+</nav>
+
+<style>
+	nav > ul > li {
+		color: var(--blue);
+	}
+</style>

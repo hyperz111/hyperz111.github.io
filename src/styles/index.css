@@ -1,1 +1,13 @@
 @import "modern-normalize";
+
+:root {
+	/*
+		See "3-bit and 4-bit" section, and then "CGA/EGA/VGA" column 
+		https://en.wikipedia.org/wiki/ANSI_escape_code#colors
+	*/
+	--cyan: rgb(78, 243, 243);
+	--blue: rgb(0, 0, 196);
+	--white: rgb(196, 196, 196);
+	--bright-white: rgb(255, 255, 255);
+	--black: rgb(0, 0, 0);
+}

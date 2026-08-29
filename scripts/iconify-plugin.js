@@ -6,7 +6,7 @@ const ID = "virtual:iconify-simple-icons";
  * Vite plugin to make iconify simple icons data is tree-shakeable
  * @param {Array<string>} icons Icons you want to include.
  */
-export function iconify(icons) {
+export function iconify(icons = []) {
 	return /** @type {import("vite").Plugin} */ ({
 		name: "iconify",
 		resolveId(id) {
