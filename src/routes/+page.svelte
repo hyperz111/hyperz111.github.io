@@ -53,10 +53,19 @@
 		padding: 0;
 		display: grid;
 		grid-template-rows: repeat(1, 1fr);
+		gap: 0.25rem;
 	}
 
 	.connections > li {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.connections > li > span {
+		text-align: left;
+	}
+
+	.connections > li > a {
+		text-align: right;
 	}
 </style>
