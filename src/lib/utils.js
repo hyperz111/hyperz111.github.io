@@ -4,7 +4,7 @@ export function slugFromPath(path) {
 
 export function formatDate(date) {
 	date = new Date(date);
-	return date.toLocaleDateString("id-ID", {
+	return date.toLocaleDateString("en-US", {
 		year: "numeric",
 		month: "long",
 		day: "numeric",

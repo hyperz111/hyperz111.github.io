@@ -73,3 +73,7 @@ mark {
 	background-color: var(--black);
 	color: var(--white);
 }
+
+code {
+	font-family: ibmbios2y;
+}

@@ -14,4 +14,18 @@
 
 <Head {config} />
 
-<data.component />
+<section class="blog">
+	<h1>{data.frontmatter.title}</h1>
+	<span>{formatDate(data.frontmatter.date)}</span>
+	<data.component />
+</section>
+
+<style>
+	:global(.blog pre.code-highlight) {
+		background-color: var(--blue);
+		color: var(--white);
+		padding: 0.5rem;
+		overflow-x: auto;
+		white-space: pre;
+	}
+</style>
