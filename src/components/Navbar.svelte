@@ -1,6 +1,4 @@
 <script>
-	import Icon from "$components/Icon.svelte";
-
 	const menus = [
 		{
 			name: "Home",
