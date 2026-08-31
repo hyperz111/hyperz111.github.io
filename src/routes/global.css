@@ -17,10 +17,59 @@
 	src: url("/WebPlus_IBM_BIOS-2y.woff") format("woff");
 }
 
+/* main */
 .content {
 	background-color: var(--white);
 	font-family: ibmbios2y;
 	display: flex;
 	height: 100dvh;
 	flex-direction: column;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+}
+
+h1::before {
+	content: "# ";
+}
+
+h2::before {
+	content: "## ";
+}
+
+h3::before {
+	content: "### ";
+}
+
+h4::before {
+	content: "#### ";
+}
+
+h5::before {
+	content: "##### ";
+}
+
+h6::before {
+	content: "###### ";
+}
+
+/* misc */
+a {
+	color: var(--blue);
+}
+
+a:hover {
+	color: var(--bright-white);
+}
+
+mark {
+	background-color: var(--black);
+	color: var(--white);
 }
