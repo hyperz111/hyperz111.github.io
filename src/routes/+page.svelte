@@ -1,5 +1,4 @@
 <script>
-	import Icon from "$components/Icon.svelte";
 	import Head from "$components/Head.svelte";
 
 	const config = {

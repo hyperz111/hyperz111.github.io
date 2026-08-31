@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@iconify-json/simple-icons':
-        specifier: ^1.2.70
-        version: 1.2.70
       modern-normalize:
         specifier: ^3.0.1
         version: 3.0.1
@@ -205,12 +202,6 @@ packages:
     resolution: {integrity: sha512-ELAAo9G2Q3vOLfnq+ftIwxwZgIfeezEap8Jer6FkJeJtq6XWbHOepAAy3YGLRAZVWCDiEWZu7FClm6II1E0+Dw==}
     peerDependencies:
       prettier: ^3
-
-  '@iconify-json/simple-icons@1.2.70':
-    resolution: {integrity: sha512-CYNRCgN6nBTjN4dNkrBCjHXNR2e4hQihdsZUs/afUNFOWLSYjfihca4EFN05rRvDk4Xoy2n8tym6IxBZmcn+Qg==}
-
-  '@iconify/types@2.0.0':
-    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -831,12 +822,6 @@ snapshots:
       prettier-plugin-svelte: 3.4.0(prettier@3.6.2)(svelte@5.40.1)
     transitivePeerDependencies:
       - svelte
-
-  '@iconify-json/simple-icons@1.2.70':
-    dependencies:
-      '@iconify/types': 2.0.0
-
-  '@iconify/types@2.0.0': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
