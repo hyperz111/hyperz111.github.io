@@ -1,5 +1,5 @@
 <script>
-	import "$styles/index.css";
+	import "./global.css";
 	import Navbar from "$components/Navbar.svelte";
 
 	let { children } = $props();

@@ -20,7 +20,6 @@ const config = {
 			strict: true,
 		}),
 		alias: {
-			$styles: "./src/styles",
 			$components: "./src/components",
 		},
 	},
