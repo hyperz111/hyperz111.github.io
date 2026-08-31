@@ -14,3 +14,12 @@
 <main>
 	{@render children()}
 </main>
+
+<style>
+	main {
+		flex: 1;
+		border: 0.1rem solid var(--black);
+		margin: 0.75rem 0;
+		padding: 0.75rem;
+	}
+</style>

@@ -11,3 +11,16 @@
 	--bright-white: rgb(255, 255, 255);
 	--black: rgb(0, 0, 0);
 }
+
+@font-face {
+	font-family: ibmbios2y;
+	src: url("/WebPlus_IBM_BIOS-2y.woff") format("woff");
+}
+
+.content {
+	background-color: var(--white);
+	font-family: ibmbios2y;
+	display: flex;
+	height: 100dvh;
+	flex-direction: column;
+}
