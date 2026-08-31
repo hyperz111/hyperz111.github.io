@@ -22,6 +22,14 @@
 			name: "TikTok",
 			url: "https://tiktok.com/@hyperz111",
 		},
+		{
+			name: "Gravatar",
+			url: "https://gravatar.com/hyperz111",
+		},
+		{
+			name: "Spotify",
+			url: "https://open.spotify.com/user/31oib2epa67o7ccro3j2z6pf55cq",
+		},
 	];
 </script>
 
@@ -59,6 +67,10 @@
 	.connections > li {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.connections > li > * {
+		overflow-wrap: anywhere;
 	}
 
 	.connections > li > span {

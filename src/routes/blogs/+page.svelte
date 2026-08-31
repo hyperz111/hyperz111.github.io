@@ -41,6 +41,10 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.blogs > li > * {
+		overflow-wrap: anywhere;
+	}
+
 	.blogs > li > span {
 		text-align: left;
 		color: var(--blue);
