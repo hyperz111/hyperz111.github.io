@@ -38,7 +38,7 @@
 <section>
 	<h1>Hello there :)</h1>
 	<p>
-		Hello visitor, i'm <b>Zen</b> and my real nickname is <b>Zeroun</b> (<i>ze-ron</i>). I'm {age} years old beginner programmer
+		Hello visitor, i'm <b>Zen</b>, but my real nickname is <b>Zeroun</b> (<i>ze-ron</i>). I'm {age} years old beginner programmer
 		from Indonesia. I like coding as my hobby and contribute to some open source projects, if i want.
 	</p>
 </section>
