@@ -6,7 +6,7 @@
 
 	const config = {
 		title: "Blogs",
-		description: "hyperz111' blogs",
+		description: "Zen's blogs",
 		type: "website",
 		url: "/blogs",
 	};

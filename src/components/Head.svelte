@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>{title}{typeof title === "string" ? " - " : ""}hyperz111</title>
+	<title>{title}{typeof title === "string" ? " - " : ""}Zen</title>
 	<meta name="description" content={description} />
 	<meta property="og:title" content={title} />
 	<meta name="og:description" content={description} />

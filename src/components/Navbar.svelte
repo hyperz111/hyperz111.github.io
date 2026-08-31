@@ -12,7 +12,7 @@
 </script>
 
 <nav>
-	<div class="title">hyperz111's personal website</div>
+	<div class="title">Zen's Personal Website</div>
 	<ul>
 		{#each menus as menu}
 			<li>
