@@ -44,6 +44,10 @@
 		display: none;
 	}
 
+	main > .tip-title {
+		text-align: center;
+	}
+
 	@media (min-width: 768px) {
 		main {
 			grid-template-columns: 3fr 1fr;
