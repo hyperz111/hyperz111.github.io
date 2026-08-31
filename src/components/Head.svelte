@@ -1,12 +1,7 @@
 <script>
 	let { config } = $props();
 
-	let {
-		title,
-		description,
-		type,
-		url,
-	} = config;
+	let { title, description, type, url } = config;
 
 	const ogUrl = `https://hyperz111.github.io${url}`;
 </script>
