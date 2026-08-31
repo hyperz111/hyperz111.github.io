@@ -2,11 +2,9 @@
 	import Head from "$components/Head.svelte";
 
 	const config = {
-		title: "Hyper-Z11",
-		description: "Situs Web Pribadi Hyper-Z11",
+		description: "hyperz111's personal website",
 		type: "website",
 		url: "/",
-		isHome: true,
 	};
 </script>
 

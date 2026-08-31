@@ -6,13 +6,11 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/favicon.png" />
+	<meta name="google-site-verification" content="4uDolj24sCSRqDkEoBUWcz7oafNptj-pA_oAnF8szyU" />
 </svelte:head>
 
 <Navbar />
 
-<main class="">
-	<div class="">
-		{@render children()}
-	</div>
+<main>
+	{@render children()}
 </main>

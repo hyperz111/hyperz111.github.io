@@ -3,8 +3,6 @@
 
 	let {
 		title,
-		isHome = false,
-
 		description,
 		type,
 		url,
@@ -14,10 +12,8 @@
 </script>
 
 <svelte:head>
-	<title>{title}{!isHome ? " - Hyper-Z11" : ""}</title>
+	<title>{title}{typeof title === "string" ? " - " : ""}hyperz111</title>
 	<meta name="description" content={description} />
-	<meta name="google-site-verification" content="4uDolj24sCSRqDkEoBUWcz7oafNptj-pA_oAnF8szyU" />
-
 	<meta property="og:title" content={title} />
 	<meta name="og:description" content={description} />
 	<meta property="og:type" content={type} />
