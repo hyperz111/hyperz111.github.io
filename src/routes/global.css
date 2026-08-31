@@ -10,6 +10,7 @@
 	--white: rgb(196, 196, 196);
 	--bright-white: rgb(255, 255, 255);
 	--black: rgb(0, 0, 0);
+	--bright-black: rgb(78, 78, 78);
 }
 
 @font-face {
@@ -76,4 +77,10 @@ mark {
 
 code {
 	font-family: ibmbios2y;
+	color: var(--bright-black);
+}
+
+code::before,
+code::after {
+	content: "`";
 }

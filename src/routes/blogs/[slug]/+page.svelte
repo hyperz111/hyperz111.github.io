@@ -28,4 +28,13 @@
 		overflow-x: auto;
 		white-space: pre;
 	}
+
+	:global(.blog pre.code-highlight > code) {
+		color: inherit;
+	}
+
+	:global(.blog pre.code-highlight > code::before),
+	:global(.blog pre.code-highlight > code::after) {
+		content: "";
+	}
 </style>
