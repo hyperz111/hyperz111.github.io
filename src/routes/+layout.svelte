@@ -8,10 +8,12 @@
 	let { children } = $props();
 
 	onMount(() => {
-		startKeyUX(window, [
-			focusGroupKeyUX()
-		]);
-	})
+		const stopKeyUX = startKeyUX(window, [focusGroupKeyUX()]);
+
+		return () => {
+			stopKeyUX();
+		};
+	});
 </script>
 
 <svelte:head>
@@ -19,25 +21,6 @@
 </svelte:head>
 
 <Navbar />
-
-<button onclick={() => {
-	window.dispatchEvent(new KeyboardEvent('keydown', {
-        key: 'Tab',
-        code: 'Tab'
-      }));
-}}>T</button>
-<button onclick={() => {
-	window.dispatchEvent(new KeyboardEvent('keydown', {
-        key: 'ArrowLeft',
-        code: 'ArrowLeft'
-      }));
-}}>L</button>
-<button onclick={() => {
-	window.dispatchEvent(new KeyboardEvent('keydown', {
-        key: 'ArrowRight',
-        code: 'ArrowRight'
-      }));
-}}>R</button>
 
 <main>
 	<div class="children">{@render children()}</div>
