@@ -1,6 +1,7 @@
 <script>
 	import "./global.css";
 	import Navbar from "$components/Navbar.svelte";
+	import Footer from "$components/Footer.svelte";
 
 	let { children } = $props();
 </script>
@@ -21,6 +22,8 @@
 		<p>You can use keyboard keys for do a navigation.</p>
 	</div>
 </main>
+
+<Footer />
 
 <style>
 	main {
