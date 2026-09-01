@@ -13,9 +13,9 @@
 
 <nav>
 	<div class="title">Zen's Personal Website</div>
-	<ul>
+	<ul role="tablist">
 		{#each menus as menu}
-			<li>
+			<li role="tab">
 				<a href={menu.url}>{menu.name}</a>
 			</li>
 		{/each}

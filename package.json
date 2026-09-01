@@ -12,6 +12,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"keyux": "^0.11.6",
 		"modern-normalize": "^3.0.1",
 		"svelte": "^5.0.0"
 	},

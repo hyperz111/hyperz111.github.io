@@ -1,9 +1,17 @@
 <script>
 	import "./global.css";
+	import { startKeyUX, focusGroupKeyUX } from "keyux";
+	import { onMount } from "svelte";
 	import Navbar from "$components/Navbar.svelte";
 	import Footer from "$components/Footer.svelte";
 
 	let { children } = $props();
+
+	onMount(() => {
+		startKeyUX(window, [
+			focusGroupKeyUX()
+		]);
+	})
 </script>
 
 <svelte:head>
@@ -11,6 +19,25 @@
 </svelte:head>
 
 <Navbar />
+
+<button onclick={() => {
+	window.dispatchEvent(new KeyboardEvent('keydown', {
+        key: 'Tab',
+        code: 'Tab'
+      }));
+}}>T</button>
+<button onclick={() => {
+	window.dispatchEvent(new KeyboardEvent('keydown', {
+        key: 'ArrowLeft',
+        code: 'ArrowLeft'
+      }));
+}}>L</button>
+<button onclick={() => {
+	window.dispatchEvent(new KeyboardEvent('keydown', {
+        key: 'ArrowRight',
+        code: 'ArrowRight'
+      }));
+}}>R</button>
 
 <main>
 	<div class="children">{@render children()}</div>
