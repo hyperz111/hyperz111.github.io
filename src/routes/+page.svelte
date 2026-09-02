@@ -30,6 +30,10 @@
 			name: "Spotify",
 			url: "https://open.spotify.com/user/31oib2epa67o7ccro3j2z6pf55cq",
 		},
+		{
+			name: "Instagram",
+			url: "https://www.instagram.com/hyperz111",
+		},
 	];
 </script>
 
@@ -45,7 +49,7 @@
 
 <section>
 	<h2>Connections</h2>
-	<ul class="connections">
+	<ul class="grid-list">
 		{#each connections as link}
 			<li>
 				<span>{link.name}:</span>
@@ -54,30 +58,3 @@
 		{/each}
 	</ul>
 </section>
-
-<style>
-	.connections {
-		list-style: none;
-		padding: 0;
-		display: grid;
-		grid-template-rows: repeat(1, 1fr);
-		gap: 0.25rem;
-	}
-
-	.connections > li {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.connections > li > * {
-		overflow-wrap: anywhere;
-	}
-
-	.connections > li > span {
-		text-align: left;
-	}
-
-	.connections > li > a {
-		text-align: right;
-	}
-</style>
