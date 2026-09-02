@@ -35,6 +35,21 @@
 			url: "https://www.instagram.com/hyperz111",
 		},
 	];
+
+	const projects = [
+		{
+			name: "hyperz111.github.io",
+			url: "https://github.com/hyperz111/hyperz111.github.io",
+		},
+		{
+			name: "npsze",
+			url: "https://github.com/hyperz111/npsze",
+		},
+		{
+			name: "tryurl",
+			url: "https://github.com/hyperz111/tryurl",
+		},
+	];
 </script>
 
 <Head {config} />
@@ -48,13 +63,32 @@
 </section>
 
 <section>
+	<h2>Projects</h2>
+	<p>I have some cool stuffs, and you probably will like it.</p>
+	<ul class="grid-list">
+		{#each projects as link}
+			<li>
+				<span>{link.name}:</span>
+				<a href={link.url}>[open]</a>
+			</li>
+		{/each}
+	</ul>
+</section>
+
+<section>
 	<h2>Connections</h2>
 	<ul class="grid-list">
 		{#each connections as link}
 			<li>
 				<span>{link.name}:</span>
-				<a href={link.url}>{link.url}</a>
+				<a href={link.url}>[open]</a>
 			</li>
 		{/each}
 	</ul>
 </section>
+
+<style>
+	.grid-list > li > span {
+		color: var(--blue);
+	}
+</style>

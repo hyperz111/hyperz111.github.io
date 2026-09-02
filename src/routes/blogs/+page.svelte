@@ -26,3 +26,9 @@
 		{/each}
 	</ul>
 </section>
+
+<style>
+	.grid-list > li > span {
+		color: var(--blue);
+	}
+</style>

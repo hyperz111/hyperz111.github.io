@@ -101,7 +101,6 @@ code::after {
 
 .grid-list > li > * {
 	overflow-wrap: anywhere;
-	color: var(--blue);
 }
 
 .grid-list > li > :nth-child(1) {
