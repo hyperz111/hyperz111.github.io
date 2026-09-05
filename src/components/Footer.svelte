@@ -1,8 +1,8 @@
 <script>
 	const keys = [
 		{
-			key: "F1",
-			label: "Help",
+			key: "Tab",
+			label: "Jump",
 		},
 		{
 			key: "↑↓",

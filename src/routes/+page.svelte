@@ -88,6 +88,10 @@
 </section>
 
 <style>
+	.grid-list > * {
+		text-decoration: none;
+	}
+
 	.grid-list > *:focus {
 		color: var(--bright-white);
 	}
