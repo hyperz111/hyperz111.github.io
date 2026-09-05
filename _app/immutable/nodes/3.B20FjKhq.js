@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/X7QifXYv.js";import{h as r}from"../chunks/xjNi5Vk0.js";import{H as e}from"../chunks/BrDMsF6F.js";import"../chunks/CLN_GUnm.js";function c(a){const o={title:"Oops...",description:"Anda mendapatkan kesalahan",type:"website",url:!1};r(t=>{e(t,{get config(){return o}})})}export{c as component};

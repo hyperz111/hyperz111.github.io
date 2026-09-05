@@ -1,0 +1,7 @@
+import"./DsnmJJEf.js";import"./X7QifXYv.js";import{aa as t,ad as a,af as r}from"./Dzfn6wBX.js";const s={title:"JavaScript Regex is Slow",description:"JavaScript Regex is Slow, but...",date:"2025-12-28T00:00:00.000Z"},{title:l,description:g,date:d}=s;var n=t(`<p>Regular Expression or oftenly <strong>regex</strong> is a pattern that used for matching.
+But one thing you should know, regex in JavaScript is kinda slow on <strong>SIMPLE</strong> pattern usage.
+If your pattern is simple, i <strong>RECOMMEND</strong> to <strong>DON’T</strong> use regex.</p> <p>For example, this regex usage:</p> <pre class="code-highlight"><code>const pola = /^Hi/;
+console.log(pola.test("Hi world"));</code></pre> <p>Can be replaced with:</p> <pre class="code-highlight"><code>console.log("Hi world".startsWith("Hi"));</code></pre> <p>You can check an example from my JavaScript library <a href="https://github.com/hyperz111/fast-camelcase-css" rel="nofollow"><code>fast-camelcase-css</code></a>.
+It <strong>isn’t</strong> using regex, but using manual operation from some methods on <code>String.prototype</code> and <code>while</code> loop.
+And the result can be 3-8 times faster than regex usage.</p> <p>But if your pattern is kinda complex, i recommend to still use regex than manual operation.
+Why? Because manual operation on complex case can be slower than regex operation.</p>`,1);function m(e){var o=n();r(12),a(e,o)}export{m as default,s as metadata};

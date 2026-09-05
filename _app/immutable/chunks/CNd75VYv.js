@@ -1,0 +1,1 @@
+import{p as o}from"./CLN_GUnm.js";const s=o;function i(e,a){let t=a.map(n=>n(e));return()=>{t.forEach(n=>n())}}function p(e=globalThis){let a=e.navigator.userAgent.toLowerCase();return!["iphone","ipad","android"].some(t=>a.includes(t))}export{p as l,s as p,i as s};
