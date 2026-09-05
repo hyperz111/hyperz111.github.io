@@ -1,15 +1,22 @@
 <script>
-	import Head from "$components/Head.svelte";
 	import { page } from "$app/state";
-
-	const config = {
-		title: "Oops...",
-		description: "Anda mendapatkan kesalahan",
-		type: "website",
-		url: false,
-	};
 </script>
 
-<svelte:head>
-	<Head {config} />
-</svelte:head>
+<div>
+	<p>{page.status}: {page.error.message}</p>
+</div>
+
+<style>
+	div {
+		background-color: var(--black);
+		color: var(--white);
+		height: 100dvh;
+		margin: 0;
+		font-family: ibmbios2y;
+		padding: 0.75rem;
+	}
+
+	p {
+		margin: 0;
+	}
+</style>
