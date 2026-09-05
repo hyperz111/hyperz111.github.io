@@ -1,13 +1,15 @@
 <script>
 	import "./global.css";
-	import { startKeyUX, focusGroupKeyUX } from "keyux";
+	import { startKeyUX, focusGroupKeyUX, likelyWithKeyboard } from "keyux";
 	import { onMount } from "svelte";
 	import Navbar from "$components/Navbar.svelte";
 	import Footer from "$components/Footer.svelte";
 
 	let { children } = $props();
+	let maybeHasKeyboard = $state(false);
 
 	onMount(() => {
+		maybeHasKeyboard = likelyWithKeyboard(window);
 		const stopKeyUX = startKeyUX(window, [focusGroupKeyUX()]);
 
 		return () => {
@@ -22,18 +24,22 @@
 
 <Navbar />
 
-<main>
+<main class:maybeHasKeyboard>
 	<div class="children">{@render children()}</div>
 
-	<div class="tip-title">
-		<span>Good Tip</span>
-	</div>
-	<div class="tip-text">
-		<p>You can use keyboard keys for do a navigation.</p>
-	</div>
+	{#if maybeHasKeyboard}
+		<div class="tip-title">
+			<span>Good Tip</span>
+		</div>
+		<div class="tip-text">
+			<p>You can use keyboard keys for do a navigation.</p>
+		</div>
+	{/if}
 </main>
 
-<Footer />
+{#if maybeHasKeyboard}
+	<Footer />
+{/if}
 
 <style>
 	main {
@@ -62,22 +68,22 @@
 	}
 
 	@media (min-width: 768px) {
-		main {
+		main.maybeHasKeyboard {
 			grid-template-columns: 3fr 1fr;
 			grid-template-rows: auto 1fr;
 		}
 
-		main > .children {
+		main.maybeHasKeyboard > .children {
 			grid-row: 1 / 3;
 		}
 
-		main > .tip-title {
+		main.maybeHasKeyboard > .tip-title {
 			display: block;
 			grid-column: 2;
 			grid-row: 1;
 		}
 
-		main > .tip-text {
+		main.maybeHasKeyboard > .tip-text {
 			display: block;
 			grid-column: 2;
 			grid-row: 2;
