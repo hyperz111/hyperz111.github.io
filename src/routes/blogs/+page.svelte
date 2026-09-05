@@ -17,18 +17,18 @@
 <section>
 	<h1>Blogs</h1>
 	<p><i>I wrote these when i have a time and a mood.</i></p>
-	<ul class="grid-list">
+	<div role="listbox" class="grid-list">
 		{#each data.blogs as blog}
-			<li>
+			<a role="option" href="/blogs/{blog.slug}">
 				<span>{blog.title}</span>
-				<a href="/blogs/{blog.slug}">[see more]</a>
-			</li>
+				<span>[see more]</span>
+			</a>
 		{/each}
-	</ul>
+	</div>
 </section>
 
 <style>
-	.grid-list > li > span {
-		color: var(--blue);
+	.grid-list > *:focus {
+		color: var(--bright-white);
 	}
 </style>

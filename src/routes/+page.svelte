@@ -65,30 +65,30 @@
 <section>
 	<h2>Projects</h2>
 	<p>I have some cool stuffs, and you probably will like it.</p>
-	<ul class="grid-list">
+	<div role="listbox" class="grid-list">
 		{#each projects as link}
-			<li>
+			<a role="option" href={link.url}>
 				<span>{link.name}:</span>
-				<a href={link.url}>[open]</a>
-			</li>
+				<span>[open]</span>
+			</a>
 		{/each}
-	</ul>
+	</div>
 </section>
 
 <section>
 	<h2>Connections</h2>
-	<ul class="grid-list">
+	<div role="listbox" class="grid-list">
 		{#each connections as link}
-			<li>
+			<a role="option" href={link.url}>
 				<span>{link.name}:</span>
-				<a href={link.url}>[open]</a>
-			</li>
+				<span>[open]</span>
+			</a>
 		{/each}
-	</ul>
+	</div>
 </section>
 
 <style>
-	.grid-list > li > span {
-		color: var(--blue);
+	.grid-list > *:focus {
+		color: var(--bright-white);
 	}
 </style>

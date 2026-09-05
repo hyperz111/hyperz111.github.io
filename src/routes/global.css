@@ -94,19 +94,19 @@ code::after {
 	gap: 0.25rem;
 }
 
-.grid-list > li {
+.grid-list > * {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-list > li > * {
+.grid-list > * > * {
 	overflow-wrap: anywhere;
 }
 
-.grid-list > li > :nth-child(1) {
+.grid-list > * > :nth-child(1) {
 	text-align: left;
 }
 
-.grid-list > li > :nth-child(2) {
+.grid-list > * > :nth-child(2) {
 	text-align: right;
 }
