@@ -1,4 +1,7 @@
 <script>
+	import { goto } from "$app/navigation";
+	import { page } from "$app/state";
+
 	const menus = [
 		{
 			name: "Home",
@@ -6,31 +9,37 @@
 		},
 		{
 			name: "Blogs",
-			url: "/blogs",
+			url: "/blogs/",
 		},
 	];
 </script>
 
 <nav>
 	<div class="title">Zen's Personal Website</div>
-	<ul role="tablist">
+	<div class="menu" role="tablist">
 		{#each menus as menu}
-			<li role="tab">
-				<a href={menu.url}>{menu.name}</a>
-			</li>
+			<a
+				href={menu.url}
+				role="tab"
+				class="item {page.url.pathname === menu.url ? 'selected' : undefined}"
+				onfocus={() => {
+					if (page.url.pathname !== menu.url) {
+						goto(menu.url);
+					}
+				}}>{menu.name}</a>
 		{/each}
-	</ul>
+	</div>
 </nav>
 
 <style>
-	nav > .title {
+	.title {
 		background-color: var(--cyan);
 		color: var(--black);
 		padding: 0.25rem 0.5rem;
 		text-align: center;
 	}
 
-	nav > ul {
+	.menu {
 		display: flex;
 		list-style: none;
 		background-color: var(--blue);
@@ -39,17 +48,14 @@
 		padding: 0 1rem;
 	}
 
-	nav > ul > li {
+	.item {
 		padding: 0.5rem 0.75rem;
-	}
-
-	nav > ul > li:hover {
-		background-color: var(--white);
-		color: var(--blue);
-	}
-
-	nav > ul > li > a {
 		color: inherit;
 		text-decoration: none;
+	}
+
+	.item.selected {
+		background-color: var(--white);
+		color: var(--blue);
 	}
 </style>
