@@ -16,7 +16,7 @@
 	});
 </script>
 
-<svelte:window onkeydown={() => goto("/")} />
+<svelte:window onkeydown={() => goto("/")} ontouchend={() => goto("/")} />
 
 <div>
 	<p>{page.status} {page.error.message}</p>
