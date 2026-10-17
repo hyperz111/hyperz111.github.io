@@ -5,7 +5,7 @@
 	background-color: var(--white);
 	font-family: ibmbios2y;
 	display: flex;
-	height: 100dvh;
+	min-height: 100dvh;
 	flex-direction: column;
 }
 
