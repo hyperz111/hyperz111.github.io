@@ -1,0 +1,12 @@
+import"./DsnmJJEf.js";import"./cXDzLMH-.js";import{aa as i,ad as t,af as n}from"./DbjcT1JI.js";const o={title:"My Coding Journey and Experience",description:"Talking about my coding experience",date:"2026-10-18T00:00:00.000Z"},{title:l,description:g,date:p}=o;var r=i(`<p>Hello visitor, i want to share my coding experience in my life. From i started until now as hobby.</p> <p>Back to that time, so i started learning coding when i was 11 years old (2022, i guess, i forget, sorry). And my first coding learning material is <strong>Web Development</strong>. Like the most people, learning HTML, CSS, and then JavaScript. I’m <strong>NOT</strong> complete all, i immediately moved to <strong>REAL</strong> programming language like Python and C-family. And you know? I still didn’t understand anything about programming. Then because of that, i just did a vacum for a few months (or a year?). Oh, about 2022, in this year when i first time made a <a href="https://github.com/hyperz111?tab=overview&amp;from=2022-10-01&amp;to=2022-10-31" rel="nofollow">GitHub account</a>.</p> <p>After a vacum, in 2023, i had my intention back to coding again. So i learned again about programming. And like in 2022, i just repeated my old journey. Web Development, Python, Scripting, and blablabla~~. But i still didn’t understand about it? Oh myself. And you know? In this year i was using my GitHub as <strong>download service</strong>, i repeat again, <strong>DOWNLOAD SERVICE</strong>? Hahaha, but sadly i removed it. And yeah, i did a vacum again.</p> <p>And now my real comeback. In December 2024 (last year), i started learning coding again. But now i learned it seriously. So, i tried to learning Web Development again (and only focus on it). Then, learned Node.js (and JavaScript), and i like it very much. So i started to contribute in JavaScript ecosystem (especially Node.js) and joined their communities. I have in there for almost 2 years.</p> <p>So, thank you for reading this blog. Hope you enjoy it. Sorry if i have some mistakes in my words.</p> <pre class="code-highlight"><code>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+++++++++++++++++++++.
+-------.
++++++++++++++.
+---.
+++++++++.
+-----------------------------------------------------------------------------------.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+++++++.
+------.
+++++++++.
++++++.</code></pre>`,1);function c(e){var a=r();n(10),t(e,a)}export{c as default,o as metadata};
